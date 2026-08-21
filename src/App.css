@@ -422,14 +422,11 @@ section {
 
 .hero h1 {
   font-family: "Playfair Display", serif;
-
   font-size: clamp(65px, 8vw, 110px);
-
   font-weight: 500;
-
   line-height: 0.85;
-
   letter-spacing: -3px;
+  color: #ffffff;
 }
 
 .hero h1 em {
