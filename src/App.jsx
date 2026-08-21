@@ -696,7 +696,7 @@ function App() {
           </p>
 
           <a
-  href="https://share.google/TJPZJjOxk1aPx3ErY"
+  href="https://share.google/YWEqUJgi0UmTC5CMS"
   target="_blank"
   rel="noreferrer"
 >
