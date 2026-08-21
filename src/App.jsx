@@ -696,12 +696,12 @@ function App() {
           </p>
 
           <a
-            href="https://www.justdial.com/Madurai/Arabian-Mandhi-Catering-Services-Thiyagi-Balu/0452PX452-X452-221201223905-N5F4_BZDET"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View reviews on Justdial →
-          </a>
+  href="https://share.google/TJPZJjOxk1aPx3ErY"
+  target="_blank"
+  rel="noreferrer"
+>
+  View reviews on Google →
+</a>
 
         </div>
 
