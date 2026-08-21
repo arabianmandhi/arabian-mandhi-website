@@ -1,22 +1,32 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
+import mandhiPlatter from "./assets/mandhi_1_full_platter.png";
+import lambMandhi from "./assets/mandhi_2_lamb.png";
+import chickenMandhi from "./assets/mandhi_3_chicken.png";
+import chickenEggs from "./assets/mandhi_4_chicken_eggs.png";
+
+
 const slides = [
   {
     title: "Mutton Mandhi",
     subtitle: "Tender meat · Fragrant rice · Authentic flavour",
+    image: lambMandhi,
   },
   {
     title: "Chicken Mandhi",
     subtitle: "Aromatic rice · Juicy chicken · Arabian tradition",
+    image: chickenMandhi,
   },
   {
     title: "Kapsa",
     subtitle: "Rich spices · Fragrant rice · Made with care",
+    image: mandhiPlatter,
   },
   {
     title: "Biryani",
     subtitle: "Traditional South Indian flavours · Made for sharing",
+    image: chickenEggs,
   },
 ];
 
@@ -263,11 +273,12 @@ function App() {
               key={item.title}
             >
 
-              <div className="hero-photo-placeholder">
-                <span>
-                  FOOD IMAGE
-                </span>
-              </div>
+              <div className="hero-photo">
+  <img
+    src={item.image}
+    alt={item.title}
+  />
+</div>
 
               <div className="hero-gradient"></div>
 
