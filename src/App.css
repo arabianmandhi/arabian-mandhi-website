@@ -368,17 +368,14 @@ section {
 
 .hero-gradient {
   position: absolute;
-
   inset: 0;
-
-  background:
-    linear-gradient(
-      90deg,
-      rgba(48, 0, 0, 0.96) 0%,
-      rgba(80, 2, 2, 0.72) 35%,
-      rgba(120, 4, 4, 0.2) 72%,
-      rgba(40, 0, 0, 0.55) 100%
-    );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.38) 30%,
+    rgba(0, 0, 0, 0.08) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 /* ================= HERO CONTENT ================= */
