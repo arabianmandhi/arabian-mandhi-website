@@ -1247,65 +1247,13 @@ function App() {
 
       {/* ================= FOOTER ================= */}
 
-      <footer>
-
-        <div className="footer-logo">
-
-          <strong>
-            ARABIAN MANDHI
-          </strong>
-
-          <small>
-            CATERING SERVICES · MADURAI
-          </small>
-
-        </div>
+      <footer className="footer">
 
         <div className="copyright">
-          © 2026 Arabian Mandhi Catering Services ·
-          Madurai
+          © 2026 Arabian Mandhi Catering Services, Madurai · All Rights Reserved.
         </div>
 
       </footer>
-
-
-      {/* ================= MOBILE BAR ================= */}
-
-      <div className="mobile-actions">
-
-        <a
-          href={`tel:${PHONE_NUMBER}`}
-          aria-label="Call Arabian Mandhi"
-        >
-          ☎
-          <span>
-            Call
-          </span>
-        </a>
-
-        <a
-          href={`https://wa.me/${WHATSAPP_NUMBER}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="WhatsApp Arabian Mandhi"
-        >
-          ●
-          <span>
-            WhatsApp
-          </span>
-        </a>
-
-        <a
-          href="#menu"
-          aria-label="View Arabian Mandhi menu"
-        >
-          ≡
-          <span>
-            Menu
-          </span>
-        </a>
-
-      </div>
 
     </div>
   );
