@@ -335,15 +335,18 @@ function App() {
                 <div className="hero-gradient"></div>
 
                 <div className="hero-content">
+                  <div className="hero-halal">
+  HALAL
+</div>
 
-                  <div className="hero-arabic">
-                    نكهة أصيلة
-                  </div>
 
-                  <div className="hero-kicker">
-                    AUTHENTIC ARABIAN FLAVOURS IN MADURAI
-                  </div>
+<div className="hero-arabic">
+  نكهة أصيلة
+</div>
 
+<div className="hero-kicker">
+  AUTHENTIC ARABIAN FLAVOURS IN MADURAI
+</div>
                   <h1>
                     Arabian
                     <br />

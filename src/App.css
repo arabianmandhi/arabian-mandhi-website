@@ -2623,3 +2623,26 @@ footer nav a:hover {
     font-size: 33px;
   }
 }
+.hero-halal {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 7px 16px;
+  border: 1px solid rgba(245, 197, 66, 0.8);
+  border-radius: 999px;
+  color: #f5c542;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+@media (max-width: 768px) {
+  .hero-halal {
+    margin-bottom: 12px;
+    padding: 6px 13px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+}
