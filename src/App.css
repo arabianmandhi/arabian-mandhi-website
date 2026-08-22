@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
-
-/* ================= ROOT COLORS ================= */
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');/* ================= ROOT COLORS ================= */
 
 :root {
   --black: #260303;
@@ -354,8 +354,8 @@ section {
   margin-bottom: 16px;
 }
 
-.hero h1 {
-  font-family: "Playfair Display", serif;
+ .hero h1 {
+   font-family: "El Messiri", serif;
   font-size: clamp(65px, 8vw, 110px);
   font-weight: 500;
   line-height: 0.85;
@@ -365,7 +365,8 @@ section {
 
 .hero h1 em {
   color: var(--orange-light);
-  font-style: italic;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .hero-subtitle {
