@@ -6,26 +6,32 @@ import lambMandhi from "./assets/mandhi_2_lamb.png";
 import chickenMandhi from "./assets/mandhi_3_chicken.png";
 import chickenEggs from "./assets/mandhi_4_chicken_eggs.png";
 
+const WHATSAPP_NUMBER = "918778395065";
+const PHONE_NUMBER = "+918778395065";
 
 const slides = [
   {
     title: "Mutton Mandhi",
-    subtitle: "Tender meat · Fragrant rice · Authentic flavour",
+    subtitle:
+      "Tender mutton · Fragrant rice · Authentic Arabian flavour in Madurai",
     image: lambMandhi,
   },
   {
     title: "Chicken Mandhi",
-    subtitle: "Aromatic rice · Juicy chicken · Arabian tradition",
+    subtitle:
+      "Aromatic rice · Juicy chicken · Traditional Arabian mandhi",
     image: chickenMandhi,
   },
   {
     title: "Kapsa",
-    subtitle: "Rich spices · Fragrant rice · Made with care",
+    subtitle:
+      "Rich spices · Fragrant rice · Delicious Arabian-style flavours",
     image: mandhiPlatter,
   },
   {
     title: "Biryani",
-    subtitle: "Traditional South Indian flavours · Made for sharing",
+    subtitle:
+      "Traditional flavours · Freshly prepared · Perfect for sharing",
     image: chickenEggs,
   },
 ];
@@ -35,22 +41,49 @@ const specialities = [
     number: "01",
     name: "Mandhi",
     description:
-      "Authentic Arabian-style rice served with tender, flavourful meat.",
+      "Authentic Arabian-style mandhi rice served with tender, flavourful meat.",
     className: "food-one",
   },
   {
     number: "02",
     name: "Kapsa",
     description:
-      "Aromatic rice layered with rich spices and delicious flavours.",
+      "Aromatic rice prepared with rich spices and delicious Arabian flavours.",
     className: "food-two",
   },
   {
     number: "03",
     name: "Biryani",
     description:
-      "Traditional biryani prepared for families, parties and celebrations.",
+      "Traditional biryani prepared for family meals, parties and celebrations.",
     className: "food-three",
+  },
+];
+
+const reviews = [
+  {
+    initial: "P",
+    name: "Priya S.",
+    text:
+      "Absolutely delicious mandhi! The rice was full of flavour and the chicken was perfectly cooked. Everyone loved it.",
+  },
+  {
+    initial: "A",
+    name: "Arun K.",
+    text:
+      "Amazing taste and generous portions. The food was fresh, flavourful and perfect for our family gathering.",
+  },
+  {
+    initial: "S",
+    name: "Sathya R.",
+    text:
+      "Loved the authentic Arabian flavours. The mandhi was delicious and the service was wonderful. Definitely ordering again!",
+  },
+  {
+    initial: "M",
+    name: "Mohammed A.",
+    text:
+      "Excellent food and great service. The mandhi was delicious and the portion size was really good. Highly recommended!",
   },
 ];
 
@@ -91,7 +124,6 @@ function App() {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     handleScroll();
 
     return () => {
@@ -113,8 +145,7 @@ function App() {
 
   const previousSlide = () => {
     setSlide(
-      (current) =>
-        (current - 1 + slides.length) % slides.length
+      (current) => (current - 1 + slides.length) % slides.length
     );
   };
 
@@ -132,35 +163,26 @@ function App() {
           scrolled ? "header-scrolled" : ""
         }`}
       >
-
         <a
           href="#home"
           className="logo"
           onClick={closeMenu}
+          aria-label="Arabian Mandhi Catering Services Madurai home"
         >
-
-          <span className="logo-symbol">
-            ✦
-          </span>
+          <span className="logo-symbol">✦</span>
 
           <div className="logo-text">
-
             <span className="arabic-brand">
               العربية مندي
             </span>
 
-            <strong>
-              ARABIAN MANDHI
-            </strong>
+            <strong>ARABIAN MANDHI</strong>
 
             <small>
               CATERING SERVICES · MADURAI
             </small>
-
           </div>
-
         </a>
-
 
         <nav
           className={
@@ -168,8 +190,8 @@ function App() {
               ? "navigation show"
               : "navigation"
           }
+          aria-label="Main navigation"
         >
-
           <a
             href="#menu"
             className={
@@ -229,780 +251,784 @@ function App() {
           >
             Contact
           </a>
-
         </nav>
 
-
         <a
-          href="https://wa.me/918778395065"
+          href={`https://wa.me/${WHATSAPP_NUMBER}`}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="order-button"
+          aria-label="Order Arabian Mandhi on WhatsApp"
         >
           Order Now →
         </a>
 
-
         <button
           className="hamburger"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Open menu"
+          aria-label={
+            menuOpen
+              ? "Close navigation menu"
+              : "Open navigation menu"
+          }
+          aria-expanded={menuOpen}
         >
           {menuOpen ? "×" : "☰"}
         </button>
-
       </header>
-
 
       {/* ================= HERO ================= */}
 
-      <section id="home" className="hero">
+      <main>
 
-        <div
-          className="hero-track"
-          style={{
-            transform:
-              `translateX(-${slide * 100}%)`,
-          }}
+        <section
+          id="home"
+          className="hero"
+          aria-label="Arabian Mandhi Catering Services in Madurai"
         >
-
-          {slides.map((item, index) => (
-
-            <div
-              className={`hero-slide hero-photo-${index + 1}`}
-              key={item.title}
-            >
-
-              <div className="hero-photo">
-  <img
-    src={item.image}
-    alt={item.title}
-  />
-</div>
-
-              <div className="hero-gradient"></div>
-
-
-              <div className="hero-content">
-
-                <div className="hero-arabic">
-                  نكهة أصيلة
-                </div>
-
-                <div className="hero-kicker">
-                  AUTHENTIC ARABIAN FLAVOURS
-                </div>
-
-                <h1>
-                  Arabian
-                  <br />
-                  <em>Mandhi</em>
-                </h1>
-
-                <p className="hero-subtitle">
-                  {item.subtitle}
-                </p>
-
-
-                <div className="hero-buttons">
-
-                  <a
-                    href="#menu"
-                    className="primary-button"
-                  >
-                    Explore Menu
-                    <span>→</span>
-                  </a>
-
-                  <a
-                    href="https://wa.me/918778395065"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="secondary-button"
-                  >
-                    WhatsApp Order
-                  </a>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          ))}
-
-        </div>
-
-
-        <div className="slider-controls">
-
-          <button onClick={previousSlide}>
-            ←
-          </button>
-
-          <div className="slider-dots">
-
-            {slides.map((item, index) => (
-
-              <button
-                key={item.title}
-                className={
-                  slide === index
-                    ? "dot active"
-                    : "dot"
-                }
-                onClick={() => setSlide(index)}
-              />
-
-            ))}
-
-          </div>
-
-          <button onClick={nextSlide}>
-            →
-          </button>
-
-        </div>
-
-
-        <div className="hero-bottom">
-
-          <span>PRE-BOOKING</span>
-
-          <i></i>
-
-          <span>PARTY ORDERS</span>
-
-          <i></i>
-
-          <span>TAKEAWAY</span>
-
-          <i></i>
-
-          <span>HOME DELIVERY</span>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= INTRO ================= */}
-
-      <section className="intro">
-
-        <span className="label">
-          THE ARABIAN EXPERIENCE
-        </span>
-
-        <h2>
-          Made to be
-          <br />
-          <em>shared.</em>
-        </h2>
-
-        <p>
-          Authentic Arabian flavours prepared with care
-          for families, celebrations and special moments
-          in Madurai.
-        </p>
-
-      </section>
-
-
-      {/* ================= MENU ================= */}
-
-      <section id="menu" className="menu">
-
-        <div className="section-heading">
-
-          <div>
-
-            <span className="label">
-              FROM OUR KITCHEN
-            </span>
-
-            <h2>
-              Our <em>specialities</em>
-            </h2>
-
-          </div>
-
-          <a href="#contact">
-            Enquire for an order →
-          </a>
-
-        </div>
-
-
-        <div className="menu-grid">
-
-          {specialities.map((item) => (
-
-            <article
-              className="menu-card"
-              key={item.name}
-            >
-
-              <div
-                className={`menu-photo ${item.className}`}
-              >
-
-                <span>
-                  FOOD PHOTO
-                </span>
-
-              </div>
-
-              <div className="menu-info">
-
-                <span className="menu-number">
-                  {item.number}
-                </span>
-
-                <h3>
-                  {item.name}
-                </h3>
-
-                <p>
-                  {item.description}
-                </p>
-
-              </div>
-
-            </article>
-
-          ))}
-
-        </div>
-
-      </section>
-
-
-      {/* ================= CATERING ================= */}
-
-      <section id="catering" className="catering">
-
-        <div className="catering-content">
-
-          <span className="label">
-            MADE FOR YOUR OCCASION
-          </span>
-
-          <h2>
-            Your people.
-            <br />
-            Your occasion.
-            <br />
-            <em>Our food.</em>
-          </h2>
-
-          <p>
-            From family gatherings to special events,
-            we prepare food that brings everyone
-            together.
-          </p>
-
-          <a
-            href="https://wa.me/918778395065"
-            target="_blank"
-            rel="noreferrer"
-            className="primary-button"
+          <div
+            className="hero-track"
+            style={{
+              transform: `translateX(-${slide * 100}%)`,
+            }}
           >
-            Enquire About Catering →
-          </a>
+            {slides.map((item, index) => (
+              <article
+                className={`hero-slide hero-photo-${index + 1}`}
+                key={item.title}
+              >
+                <div className="hero-photo">
+                  <img
+                    src={item.image}
+                    alt={`${item.title} at Arabian Mandhi Catering Services in Madurai`}
+                    loading={index === 0 ? "eager" : "lazy"}
+                  />
+                </div>
 
-        </div>
+                <div className="hero-gradient"></div>
 
+                <div className="hero-content">
 
-        <div className="occasion-list">
+                  <div className="hero-arabic">
+                    نكهة أصيلة
+                  </div>
 
-          <div>
-            <span>01</span>
-            <strong>Family Orders</strong>
+                  <div className="hero-kicker">
+                    AUTHENTIC ARABIAN FLAVOURS IN MADURAI
+                  </div>
+
+                  <h1>
+                    Arabian
+                    <br />
+                    <em>Mandhi</em>
+                  </h1>
+
+                  <p className="hero-subtitle">
+                    {item.subtitle}
+                  </p>
+
+                  <div className="hero-buttons">
+
+                    <a
+                      href="#menu"
+                      className="primary-button"
+                    >
+                      Explore Menu
+                      <span>→</span>
+                    </a>
+
+                    <a
+                      href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="secondary-button"
+                      aria-label="Order Arabian Mandhi through WhatsApp"
+                    >
+                      WhatsApp Order
+                    </a>
+
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
 
-          <div>
-            <span>02</span>
-            <strong>Party Orders</strong>
-          </div>
+          <div className="slider-controls">
 
-          <div>
-            <span>03</span>
-            <strong>Special Events</strong>
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= SERVICES ================= */}
-
-      <section className="services">
-
-        <span className="label">
-          HOW WE SERVE
-        </span>
-
-        <h2>
-          Simple.
-          <br />
-          <em>Convenient.</em>
-        </h2>
-
-
-        <div className="services-grid">
-
-          <div>
-            <span>01</span>
-
-            <h3>
-              Pre-booking
-            </h3>
-
-            <p>
-              Plan your order ahead of time.
-            </p>
-          </div>
-
-
-          <div>
-            <span>02</span>
-
-            <h3>
-              Party Orders
-            </h3>
-
-            <p>
-              Food prepared for your gatherings.
-            </p>
-          </div>
-
-
-          <div>
-            <span>03</span>
-
-            <h3>
-              Takeaway
-            </h3>
-
-            <p>
-              Order ahead and collect conveniently.
-            </p>
-          </div>
-
-
-          <div>
-            <span>04</span>
-
-            <h3>
-              Home Delivery
-            </h3>
-
-            <p>
-              Enjoy your food at home.
-            </p>
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= GALLERY ================= */}
-
-      <section id="gallery" className="gallery">
-
-        <div className="section-heading">
-
-          <div>
-
-            <span className="label">
-              FOOD & MOMENTS
-            </span>
-
-            <h2>
-              See the
-              <br />
-              <em>flavour.</em>
-            </h2>
-
-          </div>
-
-
-          <div className="gallery-controls">
-
-            <button>
+            <button
+              onClick={previousSlide}
+              aria-label="Previous food image"
+            >
               ←
             </button>
 
-            <button>
+            <div className="slider-dots">
+              {slides.map((item, index) => (
+                <button
+                  key={item.title}
+                  className={
+                    slide === index
+                      ? "dot active"
+                      : "dot"
+                  }
+                  onClick={() => setSlide(index)}
+                  aria-label={`Show ${item.title}`}
+                  aria-current={
+                    slide === index
+                      ? "true"
+                      : undefined
+                  }
+                />
+              ))}
+            </div>
+
+            <button
+              onClick={nextSlide}
+              aria-label="Next food image"
+            >
               →
             </button>
 
           </div>
 
-        </div>
+          <div className="hero-bottom">
+            <span>PRE-BOOKING</span>
+            <i></i>
+            <span>PARTY ORDERS</span>
+            <i></i>
+            <span>TAKEAWAY</span>
+            <i></i>
+            <span>HOME DELIVERY</span>
+          </div>
+        </section>
 
+        {/* ================= INTRO ================= */}
 
-        <div className="gallery-placeholder">
-
-          <span>
-            YOUR FOOD GALLERY WILL GO HERE
-          </span>
-
-          <h3>
-            Beautiful food.
-            <br />
-            <em>Beautiful moments.</em>
-          </h3>
-
-        </div>
-
-      </section>
-
-
-    {/* ================= REVIEWS ================= */}
-
-<section id="reviews" className="reviews">
-
-  <div className="reviews-heading">
-
-    <span className="label">
-      CUSTOMER LOVE
-    </span>
-
-    <h2>
-      What our
-      <br />
-      <em>customers say.</em>
-    </h2>
-
-    <p className="reviews-intro">
-      Good food is meant to be shared — and so are good experiences.
-    </p>
-
-    <div className="reviews-rating">
-      <strong>4.8</strong>
-
-      <div>
-        <div className="stars">★★★★★</div>
-        <span>Customer rating on Google</span>
-      </div>
-    </div>
-
-  </div>
-
-
-  <div className="reviews-content">
-     <div className="review-card">
-  <div className="review-card-top">
-    <div className="review-avatar">P</div>
-    <div>
-      <strong>Priya S.</strong>
-      <span>Google Review</span>
-    </div>
-    <div className="review-google">G</div>
-  </div>
-  <div className="review-stars">★★★★★</div>
-  <p>“Absolutely delicious mandhi! The rice was full of flavour and the chicken was perfectly cooked. Everyone loved it.”</p>
-</div>
-
-<div className="review-card">
-  <div className="review-card-top">
-    <div className="review-avatar">A</div>
-    <div>
-      <strong>Arun K.</strong>
-      <span>Google Review</span>
-    </div>
-    <div className="review-google">G</div>
-  </div>
-  <div className="review-stars">★★★★★</div>
-  <p>“Amazing taste and generous portions. The food was fresh, flavourful and perfect for our family gathering.”</p>
-</div>
-
-<div className="review-card">
-  <div className="review-card-top">
-    <div className="review-avatar">S</div>
-    <div>
-      <strong>Sathya R.</strong>
-      <span>Google Review</span>
-    </div>
-    <div className="review-google">G</div>
-  </div>
-  <div className="review-stars">★★★★★</div>
-  <p>“Loved the authentic Arabian flavours. The mandhi was delicious and the service was wonderful. Definitely ordering again!”</p>
-</div>
-
-<div className="review-card">
-  <div className="review-card-top">
-    <div className="review-avatar">M</div>
-    <div>
-      <strong>Mohammed A.</strong>
-      <span>Google Review</span>
-    </div>
-    <div className="review-google">G</div>
-  </div>
-  <div className="review-stars">★★★★★</div>
-  <p>“Excellent food and great service. The mandhi was delicious and the portion size was really good. Highly recommended!”</p>
-</div>
-
-
-    <div className="review-actions">
-
-      <a
-        href="https://share.google/YWEqUJgi0UmTC5CMS"
-        target="_blank"
-        rel="noreferrer"
-        className="write-review-button"
-      >
-        ✍ Write a Review on Google
-      </a>
-
-      <a
-        href="https://share.google/YWEqUJgi0UmTC5CMS"
-        target="_blank"
-        rel="noreferrer"
-        className="view-reviews-button"
-      >
-        View All Reviews →
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-      {/* ================= CONTACT ================= */}
-
-      <section id="contact" className="location">
-
-        <div className="location-content">
+        <section className="intro">
 
           <span className="label">
-            FIND US
+            AUTHENTIC ARABIAN FOOD IN MADURAI
           </span>
 
           <h2>
-            Come by.
+            Made to be
             <br />
-            <em>Order ahead.</em>
-          </h2>
-
-
-          <div className="contact-row">
-
-            <span>
-              ⌖
-            </span>
-
-            <div>
-
-              <strong>
-                Address
-              </strong>
-
-              <p>
-                101, Pandian Street,
-                <br />
-                Thiyagi Balu, Kattaboman Nagar,
-                <br />
-                Sellur, Madurai - 625014
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div className="contact-row">
-
-            <span>
-              ☎
-            </span>
-
-            <div>
-
-              <strong>
-                Call / WhatsApp
-              </strong>
-
-              <p>
-                +91 87783 95065
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div className="contact-buttons">
-
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=Arabian+Mandhi+Catering+Services+101+Pandian+Street+Madurai"
-              target="_blank"
-              rel="noreferrer"
-              className="primary-button"
-            >
-              Get Directions →
-            </a>
-
-            <a
-              href="tel:+918778395065"
-              className="outline-button"
-            >
-              Call Now
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div className="map-placeholder">
-
-          <span>
-            ⌖
-          </span>
-
-          <strong>
-            Madurai
-          </strong>
-
-          <small>
-            101, Pandian Street · Sellur
-          </small>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= SOCIAL ================= */}
-
-      <section className="social">
-
-        <div>
-
-          <span className="label">
-            FOLLOW THE FLAVOUR
-          </span>
-
-          <h2>
-            We're on
-            <br />
-            <em>social.</em>
+            <em>shared.</em>
           </h2>
 
           <p>
-            Follow us for food, updates and special offers.
+            Arabian Mandhi Catering Services brings
+            authentic Arabian flavours to Madurai.
+            Enjoy delicious mandhi, kapsa and biryani
+            prepared with care for families,
+            celebrations, parties and special occasions.
           </p>
 
-        </div>
+        </section>
 
+        {/* ================= MENU ================= */}
 
-        <div className="social-links">
-
-
-          {/* INSTAGRAM */}
-
-          <a
-            href="https://www.instagram.com/arabianmandhi_catering_service/"
-            target="_blank"
-            rel="noreferrer"
-          >
-
-            <span className="social-icon instagram-icon">
-              ◎
-            </span>
+        <section
+          id="menu"
+          className="menu"
+          aria-labelledby="menu-title"
+        >
+          <div className="section-heading">
 
             <div>
 
-              <strong>
-                Instagram
-              </strong>
+              <span className="label">
+                FROM OUR KITCHEN
+              </span>
 
-              <small>
-                @arabianmandhi_catering_service
-              </small>
+              <h2 id="menu-title">
+                Our <em>specialities</em>
+              </h2>
 
             </div>
 
-            <b>
-              →
-            </b>
+            <a href="#contact">
+              Enquire for an order →
+            </a>
 
-          </a>
+          </div>
 
+          <div className="menu-grid">
 
-          {/* FACEBOOK */}
+            {specialities.map((item) => (
+              <article
+                className="menu-card"
+                key={item.name}
+              >
 
-          <a
-            href="https://www.facebook.com/ArabianMandhiMadurai/"
-            target="_blank"
-            rel="noreferrer"
-          >
+                <div
+                  className={`menu-photo ${item.className}`}
+                >
+                  <span>
+                    ARABIAN FOOD · MADURAI
+                  </span>
+                </div>
 
-            <span className="social-icon facebook-icon">
-              f
+                <div className="menu-info">
+
+                  <span className="menu-number">
+                    {item.number}
+                  </span>
+
+                  <h3>
+                    {item.name}
+                  </h3>
+
+                  <p>
+                    {item.description}
+                  </p>
+
+                </div>
+
+              </article>
+            ))}
+
+          </div>
+        </section>
+
+        {/* ================= CATERING ================= */}
+
+        <section
+          id="catering"
+          className="catering"
+          aria-labelledby="catering-title"
+        >
+
+          <div className="catering-content">
+
+            <span className="label">
+              MADURAI CATERING SERVICES
             </span>
+
+            <h2 id="catering-title">
+              Your people.
+              <br />
+              Your occasion.
+              <br />
+              <em>Our food.</em>
+            </h2>
+
+            <p>
+              Planning a family gathering, birthday,
+              celebration or special event in Madurai?
+              Our Arabian mandhi catering is prepared
+              for sharing, with generous portions and
+              authentic flavours.
+            </p>
+
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="primary-button"
+              aria-label="Enquire about Arabian Mandhi catering"
+            >
+              Enquire About Catering →
+            </a>
+
+          </div>
+
+          <div className="occasion-list">
+
+            <div>
+              <span>01</span>
+              <strong>Family Orders</strong>
+            </div>
+
+            <div>
+              <span>02</span>
+              <strong>Party Orders</strong>
+            </div>
+
+            <div>
+              <span>03</span>
+              <strong>Special Events</strong>
+            </div>
+
+          </div>
+
+        </section>
+
+        {/* ================= SERVICES ================= */}
+
+        <section className="services">
+
+          <span className="label">
+            HOW WE SERVE MADURAI
+          </span>
+
+          <h2>
+            Simple.
+            <br />
+            <em>Convenient.</em>
+          </h2>
+
+          <div className="services-grid">
+
+            <div>
+              <span>01</span>
+
+              <h3>
+                Pre-booking
+              </h3>
+
+              <p>
+                Plan your Arabian mandhi order
+                ahead of time.
+              </p>
+            </div>
+
+            <div>
+              <span>02</span>
+
+              <h3>
+                Party Orders
+              </h3>
+
+              <p>
+                Fresh food prepared for family
+                gatherings and parties.
+              </p>
+            </div>
+
+            <div>
+              <span>03</span>
+
+              <h3>
+                Takeaway
+              </h3>
+
+              <p>
+                Order ahead and collect your food
+                conveniently.
+              </p>
+            </div>
+
+            <div>
+              <span>04</span>
+
+              <h3>
+                Home Delivery
+              </h3>
+
+              <p>
+                Enjoy authentic Arabian food
+                from the comfort of your home.
+              </p>
+            </div>
+
+          </div>
+
+        </section>
+
+        {/* ================= GALLERY ================= */}
+
+        <section
+          id="gallery"
+          className="gallery"
+          aria-labelledby="gallery-title"
+        >
+
+          <div className="section-heading">
 
             <div>
 
-              <strong>
-                Facebook
-              </strong>
+              <span className="label">
+                FOOD & MOMENTS IN MADURAI
+              </span>
 
-              <small>
-                Arabian Mandhi Madurai
-              </small>
+              <h2 id="gallery-title">
+                See the
+                <br />
+                <em>flavour.</em>
+              </h2>
 
             </div>
 
-            <b>
-              →
-            </b>
+            <div className="gallery-controls">
 
-          </a>
+              <button
+                aria-label="Previous gallery image"
+              >
+                ←
+              </button>
 
+              <button
+                aria-label="Next gallery image"
+              >
+                →
+              </button>
 
-          {/* X */}
+            </div>
 
-          <a
-            href="https://x.com/arabianmandhi"
-            target="_blank"
-            rel="noreferrer"
-          >
+          </div>
 
-            <span className="social-icon x-icon">
-              𝕏
+          <div className="gallery-placeholder">
+
+            <span>
+              ARABIAN MANDHI · MADURAI
             </span>
 
-            <div>
+            <h3>
+              Beautiful food.
+              <br />
+              <em>Beautiful moments.</em>
+            </h3>
+
+          </div>
+
+        </section>
+
+        {/* ================= REVIEWS ================= */}
+
+        <section
+          id="reviews"
+          className="reviews"
+          aria-labelledby="reviews-title"
+        >
+
+          <div className="reviews-heading">
+
+            <span className="label">
+              CUSTOMER REVIEWS
+            </span>
+
+            <h2 id="reviews-title">
+              What our
+              <br />
+              <em>customers say.</em>
+            </h2>
+
+            <p className="reviews-intro">
+              Good food is meant to be shared —
+              and so are good experiences.
+            </p>
+
+            <div className="reviews-rating">
 
               <strong>
-                X
+                4.8
               </strong>
 
-              <small>
-                @arabianmandhi
-              </small>
+              <div>
+                <div className="stars">
+                  ★★★★★
+                </div>
+
+                <span>
+                  Customer rating on Google
+                </span>
+              </div>
 
             </div>
 
-            <b>
-              →
-            </b>
+          </div>
 
-          </a>
+          <div className="reviews-content">
 
+            {reviews.map((review) => (
+              <article
+                className="review-card"
+                key={review.name}
+              >
 
-        </div>
+                <div className="review-card-top">
 
-      </section>
+                  <div className="review-avatar">
+                    {review.initial}
+                  </div>
 
+                  <div>
+                    <strong>
+                      {review.name}
+                    </strong>
+
+                    <span>
+                      Google Review
+                    </span>
+                  </div>
+
+                  <div className="review-google">
+                    G
+                  </div>
+
+                </div>
+
+                <div
+                  className="review-stars"
+                  aria-label="5 out of 5 stars"
+                >
+                  ★★★★★
+                </div>
+
+                <p>
+                  “{review.text}”
+                </p>
+
+              </article>
+            ))}
+
+            <div className="review-actions">
+
+              <a
+                href="https://share.google/YWEqUJgi0UmTC5CMS"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="write-review-button"
+              >
+                ✍ Write a Review on Google
+              </a>
+
+              <a
+                href="https://share.google/YWEqUJgi0UmTC5CMS"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="view-reviews-button"
+              >
+                View All Reviews →
+              </a>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        {/* ================= CONTACT ================= */}
+
+        <section
+          id="contact"
+          className="location"
+          aria-labelledby="contact-title"
+        >
+
+          <div className="location-content">
+
+            <span className="label">
+              FIND ARABIAN MANDHI IN MADURAI
+            </span>
+
+            <h2 id="contact-title">
+              Come by.
+              <br />
+              <em>Order ahead.</em>
+            </h2>
+
+            <div className="contact-row">
+
+              <span aria-hidden="true">
+                ⌖
+              </span>
+
+              <div>
+
+                <strong>
+                  Address
+                </strong>
+
+                <p>
+                  101, Pandian Street,
+                  <br />
+                  Thiyagi Balu, Kattaboman Nagar,
+                  <br />
+                  Sellur, Madurai - 625014
+                </p>
+
+              </div>
+
+            </div>
+
+            <div className="contact-row">
+
+              <span aria-hidden="true">
+                ☎
+              </span>
+
+              <div>
+
+                <strong>
+                  Call / WhatsApp
+                </strong>
+
+                <p>
+                  +91 87783 95065
+                </p>
+
+              </div>
+
+            </div>
+
+            <div className="contact-buttons">
+
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Arabian+Mandhi+Catering+Services+101+Pandian+Street+Madurai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="primary-button"
+              >
+                Get Directions →
+              </a>
+
+              <a
+                href={`tel:${PHONE_NUMBER}`}
+                className="outline-button"
+              >
+                Call Now
+              </a>
+
+            </div>
+
+          </div>
+
+          <div
+            className="map-placeholder"
+            aria-label="Arabian Mandhi location in Sellur, Madurai"
+          >
+
+            <span aria-hidden="true">
+              ⌖
+            </span>
+
+            <strong>
+              Madurai
+            </strong>
+
+            <small>
+              101, Pandian Street · Sellur
+            </small>
+
+          </div>
+
+        </section>
+
+        {/* ================= SOCIAL ================= */}
+
+        <section className="social">
+
+          <div>
+
+            <span className="label">
+              FOLLOW THE FLAVOUR
+            </span>
+
+            <h2>
+              We're on
+              <br />
+              <em>social.</em>
+            </h2>
+
+            <p>
+              Follow Arabian Mandhi for food,
+              updates and special offers in Madurai.
+            </p>
+
+          </div>
+
+          <div className="social-links">
+
+            {/* INSTAGRAM */}
+
+            <a
+              href="https://www.instagram.com/arabianmandhi_catering_service/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Arabian Mandhi Catering Services on Instagram"
+            >
+
+              <span className="social-icon instagram-icon">
+                ◎
+              </span>
+
+              <div>
+
+                <strong>
+                  Instagram
+                </strong>
+
+                <small>
+                  @arabianmandhi_catering_service
+                </small>
+
+              </div>
+
+              <b>
+                →
+              </b>
+
+            </a>
+
+            {/* FACEBOOK */}
+
+            <a
+              href="https://www.facebook.com/ArabianMandhiMadurai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Arabian Mandhi Madurai on Facebook"
+            >
+
+              <span className="social-icon facebook-icon">
+                f
+              </span>
+
+              <div>
+
+                <strong>
+                  Facebook
+                </strong>
+
+                <small>
+                  Arabian Mandhi Madurai
+                </small>
+
+              </div>
+
+              <b>
+                →
+              </b>
+
+            </a>
+
+            {/* X */}
+
+            <a
+              href="https://x.com/arabianmandhi"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Arabian Mandhi on X"
+            >
+
+              <span className="social-icon x-icon">
+                𝕏
+              </span>
+
+              <div>
+
+                <strong>
+                  X
+                </strong>
+
+                <small>
+                  @arabianmandhi
+                </small>
+
+              </div>
+
+              <b>
+                →
+              </b>
+
+            </a>
+
+          </div>
+
+        </section>
+
+      </main>
 
       {/* ================= FOOTER ================= */}
 
@@ -1020,19 +1046,21 @@ function App() {
 
         </div>
 
-
         <div className="copyright">
-          © 2026 Arabian Mandhi Catering Services · Madurai
+          © 2026 Arabian Mandhi Catering Services ·
+          Madurai
         </div>
 
       </footer>
-
 
       {/* ================= MOBILE BAR ================= */}
 
       <div className="mobile-actions">
 
-        <a href="tel:+918778395065">
+        <a
+          href={`tel:${PHONE_NUMBER}`}
+          aria-label="Call Arabian Mandhi"
+        >
           ☎
           <span>
             Call
@@ -1040,9 +1068,10 @@ function App() {
         </a>
 
         <a
-          href="https://wa.me/918778395065"
+          href={`https://wa.me/${WHATSAPP_NUMBER}`}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp Arabian Mandhi"
         >
           ●
           <span>
@@ -1050,7 +1079,10 @@ function App() {
           </span>
         </a>
 
-        <a href="#menu">
+        <a
+          href="#menu"
+          aria-label="View Arabian Mandhi menu"
+        >
           ≡
           <span>
             Menu
