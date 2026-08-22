@@ -662,50 +662,117 @@ function App() {
       </section>
 
 
-      {/* ================= REVIEWS ================= */}
+    {/* ================= REVIEWS ================= */}
 
-      <section id="reviews" className="reviews">
+<section id="reviews" className="reviews">
 
-        <div>
+  <div className="reviews-heading">
 
-          <span className="label">
-            CUSTOMER LOVE
-          </span>
+    <span className="label">
+      CUSTOMER LOVE
+    </span>
 
-          <h2>
-            Rated with
-            <br />
-            <em>love.</em>
-          </h2>
+    <h2>
+      What our
+      <br />
+      <em>customers say.</em>
+    </h2>
 
-        </div>
+    <p className="reviews-intro">
+      Good food is meant to be shared — and so are good experiences.
+    </p>
+
+    <div className="reviews-rating">
+      <strong>4.8</strong>
+
+      <div>
+        <div className="stars">★★★★★</div>
+        <span>Customer rating on Google</span>
+      </div>
+    </div>
+
+  </div>
 
 
-        <div className="review-box">
+  <div className="reviews-content">
+     <div className="review-card">
+  <div className="review-card-top">
+    <div className="review-avatar">P</div>
+    <div>
+      <strong>Priya S.</strong>
+      <span>Google Review</span>
+    </div>
+    <div className="review-google">G</div>
+  </div>
+  <div className="review-stars">★★★★★</div>
+  <p>“Absolutely delicious mandhi! The rice was full of flavour and the chicken was perfectly cooked. Everyone loved it.”</p>
+</div>
 
-          <strong>
-            4.8
-          </strong>
+<div className="review-card">
+  <div className="review-card-top">
+    <div className="review-avatar">A</div>
+    <div>
+      <strong>Arun K.</strong>
+      <span>Google Review</span>
+    </div>
+    <div className="review-google">G</div>
+  </div>
+  <div className="review-stars">★★★★★</div>
+  <p>“Amazing taste and generous portions. The food was fresh, flavourful and perfect for our family gathering.”</p>
+</div>
 
-          <div className="stars">
-            ★★★★★
-          </div>
+<div className="review-card">
+  <div className="review-card-top">
+    <div className="review-avatar">S</div>
+    <div>
+      <strong>Sathya R.</strong>
+      <span>Google Review</span>
+    </div>
+    <div className="review-google">G</div>
+  </div>
+  <div className="review-stars">★★★★★</div>
+  <p>“Loved the authentic Arabian flavours. The mandhi was delicious and the service was wonderful. Definitely ordering again!”</p>
+</div>
 
-          <p>
-            Customer rating
-          </p>
+<div className="review-card">
+  <div className="review-card-top">
+    <div className="review-avatar">M</div>
+    <div>
+      <strong>Mohammed A.</strong>
+      <span>Google Review</span>
+    </div>
+    <div className="review-google">G</div>
+  </div>
+  <div className="review-stars">★★★★★</div>
+  <p>“Excellent food and great service. The mandhi was delicious and the portion size was really good. Highly recommended!”</p>
+</div>
 
-          <a
-  href="https://share.google/YWEqUJgi0UmTC5CMS"
-  target="_blank"
-  rel="noreferrer"
->
-  View reviews on Google →
-</a>
 
-        </div>
+    <div className="review-actions">
 
-      </section>
+      <a
+        href="https://share.google/YWEqUJgi0UmTC5CMS"
+        target="_blank"
+        rel="noreferrer"
+        className="write-review-button"
+      >
+        ✍ Write a Review on Google
+      </a>
+
+      <a
+        href="https://share.google/YWEqUJgi0UmTC5CMS"
+        target="_blank"
+        rel="noreferrer"
+        className="view-reviews-button"
+      >
+        View All Reviews →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
 
 
       {/* ================= CONTACT ================= */}
@@ -950,31 +1017,6 @@ function App() {
           <small>
             CATERING SERVICES · MADURAI
           </small>
-
-        </div>
-
-
-        <div className="footer-links">
-
-          <a href="#menu">
-            Menu
-          </a>
-
-          <a href="#catering">
-            Catering
-          </a>
-
-          <a href="#gallery">
-            Gallery
-          </a>
-
-          <a href="#reviews">
-            Reviews
-          </a>
-
-          <a href="#contact">
-            Contact
-          </a>
 
         </div>
 
