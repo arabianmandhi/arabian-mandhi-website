@@ -36,27 +36,49 @@ const slides = [
   },
 ];
 
+/* ================= FULL MENU ================= */
+
 const specialities = [
   {
     number: "01",
     name: "Mandhi",
-    description:
-      "Authentic Arabian-style mandhi rice served with tender, flavourful meat.",
-    className: "food-one",
+    dishes: [
+      "Mutton Mandhi (Laham)",
+      "Chicken Mandhi (Dajaj)",
+      "Mixed Mandhi",
+    ],
   },
   {
     number: "02",
     name: "Kapsa",
-    description:
-      "Aromatic rice prepared with rich spices and delicious Arabian flavours.",
-    className: "food-two",
+    dishes: [
+      "Mutton Kapsa (Laham)",
+      "Chicken Kapsa (Dajaj)",
+      "Mixed Kapsa",
+    ],
   },
   {
     number: "03",
-    name: "Biryani",
-    description:
-      "Traditional biryani prepared for family meals, parties and celebrations.",
-    className: "food-three",
+    name: "Briyani",
+    dishes: [
+      "Mutton Briyani",
+      "Chicken Briyani",
+      "Hyderabad Briyani",
+      "Ghee Rice",
+    ],
+  },
+  {
+    number: "04",
+    name: "Sides",
+    dishes: [
+      "Chicken 65 / Gravy",
+      "Pepper Chicken",
+      "Grill Chicken",
+      "Mutton Gravy / Chukka",
+      "Beshawar Mutton Gravy",
+      "Prawns Fry / Gravy",
+      "Fish Fry",
+    ],
   },
 ];
 
@@ -442,7 +464,7 @@ function App() {
               </span>
 
               <h2 id="menu-title">
-                Our <em>specialities</em>
+                Our <em>menu</em>
               </h2>
 
             </div>
@@ -453,35 +475,44 @@ function App() {
 
           </div>
 
-          <div className="menu-grid">
+          <div className="menu-list">
 
-            {specialities.map((item) => (
+            {specialities.map((category) => (
               <article
-                className="menu-card"
-                key={item.name}
+                className="menu-category"
+                key={category.name}
               >
 
-                <div
-                  className={`menu-photo ${item.className}`}
-                >
-                  <span>
-                    ARABIAN FOOD · MADURAI
-                  </span>
-                </div>
-
-                <div className="menu-info">
+                <div className="menu-category-header">
 
                   <span className="menu-number">
-                    {item.number}
+                    {category.number}
                   </span>
 
                   <h3>
-                    {item.name}
+                    {category.name}
                   </h3>
 
-                  <p>
-                    {item.description}
-                  </p>
+                </div>
+
+                <div className="dish-list">
+
+                  {category.dishes.map((dish) => (
+                    <div
+                      className="dish-card"
+                      key={dish}
+                    >
+                      <span className="dish-dot"></span>
+
+                      <span className="dish-name">
+                        {dish}
+                      </span>
+
+                      <span className="dish-arrow">
+                        →
+                      </span>
+                    </div>
+                  ))}
 
                 </div>
 
@@ -489,6 +520,7 @@ function App() {
             ))}
 
           </div>
+
         </section>
 
         {/* ================= CATERING ================= */}
@@ -626,63 +658,227 @@ function App() {
 
         </section>
 
-        {/* ================= GALLERY ================= */}
+        {/* ================= GALLERY / BEST DISHES ================= */}
 
-        <section
-          id="gallery"
-          className="gallery"
-          aria-labelledby="gallery-title"
-        >
+<section
+  id="gallery"
+  className="gallery"
+  aria-labelledby="gallery-title"
+>
+  <div className="section-heading">
 
-          <div className="section-heading">
+    <div>
+      <span className="label">
+        FOOD & FLAVOURS IN MADURAI
+      </span>
 
-            <div>
+      <h2 id="gallery-title">
+        Our best
+        <br />
+        <em>dishes.</em>
+      </h2>
 
-              <span className="label">
-                FOOD & MOMENTS IN MADURAI
-              </span>
+      <p className="gallery-intro">
+        From the best mandhi in Madurai to tasty biryani,
+        explore some of our signature Arabian dishes,
+        freshly prepared for you.
+      </p>
+    </div>
 
-              <h2 id="gallery-title">
-                See the
-                <br />
-                <em>flavour.</em>
-              </h2>
+    <div className="gallery-controls">
+      <button
+        aria-label="Previous dish"
+        type="button"
+      >
+        ←
+      </button>
 
-            </div>
+      <button
+        aria-label="Next dish"
+        type="button"
+      >
+        →
+      </button>
+    </div>
 
-            <div className="gallery-controls">
+  </div>
 
-              <button
-                aria-label="Previous gallery image"
-              >
-                ←
-              </button>
 
-              <button
-                aria-label="Next gallery image"
-              >
-                →
-              </button>
+  {/* ================= FEATURED DISHES ================= */}
 
-            </div>
+  <div className="dish-gallery">
 
-          </div>
+    {/* MUTTON MANDHI */}
 
-          <div className="gallery-placeholder">
+    <article className="dish-gallery-card">
 
-            <span>
-              ARABIAN MANDHI · MADURAI
-            </span>
+      <div className="dish-gallery-image">
+        <span>
+          FOOD IMAGE
+        </span>
+      </div>
 
-            <h3>
-              Beautiful food.
-              <br />
-              <em>Beautiful moments.</em>
-            </h3>
+      <div className="dish-gallery-info">
 
-          </div>
+        <span className="dish-gallery-number">
+          01 · SIGNATURE
+        </span>
 
-        </section>
+        <h3>
+          Mutton Mandhi
+        </h3>
+
+        <p>
+          Authentic Arabian mandhi with tender mutton
+          and fragrant rice — a favourite for mandhi
+          lovers in Madurai.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    {/* CHICKEN MANDHI */}
+
+    <article className="dish-gallery-card">
+
+      <div className="dish-gallery-image dish-gallery-image-2">
+        <span>
+          FOOD IMAGE
+        </span>
+      </div>
+
+      <div className="dish-gallery-info">
+
+        <span className="dish-gallery-number">
+          02 · SIGNATURE
+        </span>
+
+        <h3>
+          Chicken Mandhi
+        </h3>
+
+        <p>
+          Juicy chicken served with aromatic Arabian
+          mandhi rice, prepared fresh in Madurai.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    {/* MUTTON BIRYANI */}
+
+    <article className="dish-gallery-card">
+
+      <div className="dish-gallery-image dish-gallery-image-3">
+        <span>
+          FOOD IMAGE
+        </span>
+      </div>
+
+      <div className="dish-gallery-info">
+
+        <span className="dish-gallery-number">
+          03 · FAVOURITE
+        </span>
+
+        <h3>
+          Mutton Biryani
+        </h3>
+
+        <p>
+          Rich and flavourful mutton biryani made
+          with aromatic spices and tender mutton.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    {/* CHICKEN BIRYANI */}
+
+    <article className="dish-gallery-card">
+
+      <div className="dish-gallery-image dish-gallery-image-4">
+        <span>
+          FOOD IMAGE
+        </span>
+      </div>
+
+      <div className="dish-gallery-info">
+
+        <span className="dish-gallery-number">
+          04 · FAVOURITE
+        </span>
+
+        <h3>
+          Chicken Biryani
+        </h3>
+
+        <p>
+          Tasty chicken biryani prepared with fragrant
+          rice and delicious traditional spices.
+        </p>
+
+      </div>
+
+    </article>
+
+  </div>
+
+
+  {/* ================= VIEW ALL ================= */}
+
+  <div className="gallery-bottom">
+
+    <button
+      type="button"
+      className="view-all-dishes"
+    >
+      View All Dishes
+      <span>→</span>
+    </button>
+
+  </div>
+
+
+  {/* ================= ORDER CTA ================= */}
+
+  <div className="gallery-order">
+
+    <span className="gallery-order-label">
+      HUNGRY ALREADY?
+    </span>
+
+    <h3>
+      Order your favourite
+      <br />
+      <em>today.</em>
+    </h3>
+
+    <p>
+      Enjoy authentic Arabian mandhi and tasty
+      biryani in Madurai.
+    </p>
+
+    <a
+      href={`https://wa.me/${WHATSAPP_NUMBER}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="primary-button"
+      aria-label="Order Arabian Mandhi on WhatsApp"
+    >
+      WhatsApp Order
+      <span>→</span>
+    </a>
+
+  </div>
+
+</section>
 
         {/* ================= REVIEWS ================= */}
 
@@ -931,8 +1127,6 @@ function App() {
 
           <div className="social-links">
 
-            {/* INSTAGRAM */}
-
             <a
               href="https://www.instagram.com/arabianmandhi_catering_service/"
               target="_blank"
@@ -962,8 +1156,6 @@ function App() {
 
             </a>
 
-            {/* FACEBOOK */}
-
             <a
               href="https://www.facebook.com/ArabianMandhiMadurai/"
               target="_blank"
@@ -992,8 +1184,6 @@ function App() {
               </b>
 
             </a>
-
-            {/* X */}
 
             <a
               href="https://x.com/arabianmandhi"
