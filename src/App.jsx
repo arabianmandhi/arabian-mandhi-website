@@ -5,6 +5,7 @@ import mandhiPlatter from "./assets/mandhi_1_full_platter.png";
 import lambMandhi from "./assets/mandhi_2_lamb.png";
 import chickenMandhi from "./assets/mandhi_3_chicken.png";
 import chickenEggs from "./assets/mandhi_4_chicken_eggs.png";
+import arabianMandhiLogo from "./assets/arabian-mandhi-logo.png";
 
 import bestMuttonMandhi from "./assets/best-mutton-mandhi-madurai.png";
 import bestChickenMandhi from "./assets/best-chicken-mandhi-madurai.png";
@@ -191,25 +192,17 @@ function App() {
         }`}
       >
         <a
-          href="#home"
-          className="logo"
-          onClick={closeMenu}
-          aria-label="Arabian Mandhi Catering Services Madurai home"
-        >
-          <span className="logo-symbol">✦</span>
-
-          <div className="logo-text">
-            <span className="arabic-brand">
-              العربية مندي
-            </span>
-
-            <strong>ARABIAN MANDHI</strong>
-
-            <small>
-              CATERING SERVICES · MADURAI
-            </small>
-          </div>
-        </a>
+  href="#home"
+  className="logo"
+  onClick={closeMenu}
+  aria-label="Arabian Mandhi Catering Services Madurai home"
+>
+  <img
+    src={arabianMandhiLogo}
+    alt="Arabian Mandhi Catering Services Madurai"
+    className="logo-image"
+  />
+</a>
 
         <nav
           className={

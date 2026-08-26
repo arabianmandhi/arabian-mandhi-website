@@ -104,13 +104,12 @@ section {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 6px 15px 6px 6px;
-  border-radius: 45px;
-  background: rgba(60, 0, 0, 0.35);
-  backdrop-filter: blur(7px);
+  padding: 0;
+  border-radius: 0;
+  background: transparent !important;
+  backdrop-filter: none;
+  box-shadow: none;
 }
-
 .logo-symbol {
   width: 41px;
   height: 41px;
@@ -174,6 +173,17 @@ section {
   letter-spacing: 2px;
   line-height: 1;
   white-space: nowrap;
+}
+/* ================= LOGO IMAGE ================= */
+
+.logo-image {
+  width: 190px;
+  height: 85px;
+  display: block;
+  object-fit: contain;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* ================= NAVIGATION ================= */
@@ -2069,6 +2079,10 @@ footer nav a:hover {
   .dish-arrow {
     font-size: 9px;
   }
+  .logo-image {
+  width: 115px;
+  height: auto;
+}
 
   /* ================= SERVICES ================= */
 
