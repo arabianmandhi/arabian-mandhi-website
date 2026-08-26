@@ -300,8 +300,8 @@ section {
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center;
-  transform: scale(1.02);
+  object-position: center center;
+  transform: scale(1.2);
 }
 
 .hero-photo-1 .hero-photo img {

@@ -1049,9 +1049,9 @@ function App() {
                 <p>
                   101, Pandian Street,
                   <br />
-                  Thiyagi Balu, Kattaboman Nagar,
+                  Kattaboman Nagar, Opp Star Tution Center,
                   <br />
-                  Sellur, Madurai - 625014
+                  Sellur, Madurai - 625002
                 </p>
 
               </div>
