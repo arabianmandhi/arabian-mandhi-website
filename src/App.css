@@ -1819,6 +1819,79 @@ footer nav a:hover {
   font-size: 8px;
   line-height: 1.6;
 }
+/* ================= SECTION HEADING COLORS ================= */
+
+/* INTRO - Cream background */
+.intro h2 {
+  color: #260303;
+}
+
+.intro h2 em {
+  color: var(--orange);
+}
+
+/* MENU - Cream background */
+.menu h2 {
+  color: #260303;
+}
+
+.menu h2 em {
+  color: var(--orange);
+}
+
+/* CATERING - Dark background */
+.catering h2 {
+  color: #ffffff;
+}
+
+.catering h2 em {
+  color: var(--orange-light);
+}
+
+/* SERVICES - Cream background */
+.services h2 {
+  color: #260303;
+}
+
+.services h2 em {
+  color: var(--orange);
+}
+
+/* GALLERY - Dark background */
+.gallery h2 {
+  color: #ffffff;
+}
+
+.gallery h2 em {
+  color: var(--orange-light);
+}
+
+/* REVIEWS - Cream background */
+.reviews h2 {
+  color: #4b0202;
+}
+
+.reviews h2 em {
+  color: var(--orange);
+}
+
+/* LOCATION - Cream background */
+.location h2 {
+  color: #260303;
+}
+
+.location h2 em {
+  color: var(--orange);
+}
+
+/* SOCIAL - Cream background */
+.social h2 {
+  color: #4b0202 !important;
+}
+
+.social h2 em {
+  color: #f0b52f !important;
+}
 
 /* =========================================================
    ======================== TABLET =========================
