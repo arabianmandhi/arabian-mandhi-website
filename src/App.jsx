@@ -25,7 +25,7 @@ const slides = [
   {
     title: "Chicken Mandhi",
     subtitle:
-      "Aromatic rice · Juicy chicken · Traditional Arabian mandhi",
+      "Aromatic rice · Juicy chicken · Traditional Arabian mandhi in Madurai",
     image: chickenMandhi,
   },
   {
@@ -37,7 +37,7 @@ const slides = [
   {
     title: "Biryani",
     subtitle:
-      "Traditional flavours · Freshly prepared · Perfect for sharing",
+      "Traditional flavours · Freshly prepared · Perfect for family orders",
     image: chickenEggs,
   },
 ];
@@ -65,11 +65,11 @@ const specialities = [
   },
   {
     number: "03",
-    name: "Briyani",
+    name: "Biryani",
     dishes: [
-      "Mutton Briyani",
-      "Chicken Briyani",
-      "Hyderabad Briyani",
+      "Mutton Biryani",
+      "Chicken Biryani",
+      "Hyderabad Biryani",
       "Ghee Rice",
     ],
   },
@@ -192,17 +192,17 @@ function App() {
         }`}
       >
         <a
-  href="#home"
-  className="logo"
-  onClick={closeMenu}
-  aria-label="Arabian Mandhi Catering Services Madurai home"
->
-  <img
-    src={arabianMandhiLogo}
-    alt="Arabian Mandhi Catering Services Madurai"
-    className="logo-image"
-  />
-</a>
+          href="#home"
+          className="logo"
+          onClick={closeMenu}
+          aria-label="Arabian Mandhi Catering Services in Madurai home"
+        >
+          <img
+            src={arabianMandhiLogo}
+            alt="Arabian Mandhi Catering Services in Madurai"
+            className="logo-image"
+          />
+        </a>
 
         <nav
           className={
@@ -278,7 +278,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
           className="order-button"
-          aria-label="Order Arabian Mandhi on WhatsApp"
+          aria-label="Order Arabian Mandhi in Madurai on WhatsApp"
         >
           Order Now →
         </a>
@@ -328,22 +328,23 @@ function App() {
                 <div className="hero-gradient"></div>
 
                 <div className="hero-content">
+
                   <div className="hero-halal">
-  HALAL
-</div>
+                    HALAL
+                  </div>
 
+                  <div className="hero-arabic">
+                    نكهة أصيلة
+                  </div>
 
-<div className="hero-arabic">
-  نكهة أصيلة
-</div>
+                  <div className="hero-kicker">
+                    AUTHENTIC ARABIAN FLAVOURS IN MADURAI
+                  </div>
 
-<div className="hero-kicker">
-  AUTHENTIC ARABIAN FLAVOURS IN MADURAI
-</div>
                   <h1>
                     Arabian
                     <br />
-                    <em>Mandhi</em>
+                    <em>Mandhi in Madurai</em>
                   </h1>
 
                   <p className="hero-subtitle">
@@ -415,7 +416,7 @@ function App() {
           </div>
 
           <div className="hero-bottom">
-            <span>PRE-BOOKING</span>
+            <span>1-DAY PRE-BOOKING</span>
             <i></i>
             <span>PARTY ORDERS</span>
             <i></i>
@@ -441,11 +442,12 @@ function App() {
           </h2>
 
           <p>
-            Arabian Mandhi Catering Services brings
-            authentic Arabian flavours to Madurai.
-            Enjoy delicious mandhi, kapsa and biryani
-            prepared with care for families,
-            celebrations, parties and special occasions.
+            Arabian Mandhi Catering Services brings authentic
+            Arabian mandhi to Madurai, with delicious chicken
+            mandhi, mutton mandhi, kapsa and biryani prepared
+            fresh for family meals, party orders, celebrations
+            and catering. Orders are prepared in advance and
+            require pre-booking at least one day ahead.
           </p>
 
         </section>
@@ -463,11 +465,11 @@ function App() {
             <div>
 
               <span className="label">
-                FROM OUR KITCHEN
+                MANDHI & BIRYANI IN MADURAI
               </span>
 
               <h2 id="menu-title">
-                Our <em>menu</em>
+                Madurai <em>Mandhi & Biryani Menu</em>
               </h2>
 
             </div>
@@ -538,7 +540,7 @@ function App() {
           <div className="catering-content">
 
             <span className="label">
-              MADURAI CATERING SERVICES
+              MANDHI CATERING SERVICES IN MADURAI
             </span>
 
             <h2 id="catering-title">
@@ -550,11 +552,12 @@ function App() {
             </h2>
 
             <p>
-              Planning a family gathering, birthday,
-              celebration or special event in Madurai?
-              Our Arabian mandhi catering is prepared
-              for sharing, with generous portions and
-              authentic flavours.
+              Looking for mandhi catering in Madurai for a
+              family gathering, birthday, celebration or
+              special event? We prepare chicken mandhi,
+              mutton mandhi, kapsa and biryani fresh for
+              sharing. Please pre-book your order at least
+              one day in advance for preparation and delivery.
             </p>
 
             <a
@@ -562,7 +565,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
               className="primary-button"
-              aria-label="Enquire about Arabian Mandhi catering"
+              aria-label="Enquire about Arabian Mandhi catering in Madurai"
             >
               Enquire About Catering →
             </a>
@@ -600,9 +603,9 @@ function App() {
           </span>
 
           <h2>
-            Simple.
+            Fresh food.
             <br />
-            <em>Convenient.</em>
+            <em>Made to order.</em>
           </h2>
 
           <div className="services-grid">
@@ -611,12 +614,13 @@ function App() {
               <span>01</span>
 
               <h3>
-                Pre-booking
+                1-Day Pre-Booking
               </h3>
 
               <p>
-                Plan your Arabian mandhi order
-                ahead of time.
+                Please place your mandhi or biryani order
+                at least one day in advance so we can
+                prepare it fresh.
               </p>
             </div>
 
@@ -624,12 +628,13 @@ function App() {
               <span>02</span>
 
               <h3>
-                Party Orders
+                Party Catering
               </h3>
 
               <p>
-                Fresh food prepared for family
-                gatherings and parties.
+                Mandhi, kapsa and biryani prepared for
+                family gatherings, parties and special
+                occasions in Madurai.
               </p>
             </div>
 
@@ -641,8 +646,8 @@ function App() {
               </h3>
 
               <p>
-                Order ahead and collect your food
-                conveniently.
+                Pre-order your favourite Arabian food
+                and collect it at the arranged time.
               </p>
             </div>
 
@@ -654,8 +659,9 @@ function App() {
               </h3>
 
               <p>
-                Enjoy authentic Arabian food
-                from the comfort of your home.
+                Enjoy freshly prepared mandhi and biryani
+                delivered for your pre-booked family and
+                catering orders.
               </p>
             </div>
 
@@ -687,9 +693,10 @@ function App() {
               </h2>
 
               <p className="gallery-intro">
-                Discover the best mandhi in Madurai and tasty
-                biryani, freshly prepared with authentic Arabian
-                flavours at Arabian Mandhi Catering Services.
+                Discover delicious chicken mandhi, mutton
+                mandhi and biryani in Madurai, freshly prepared
+                with authentic Arabian flavours at Arabian
+                Mandhi Catering Services.
               </p>
 
             </div>
@@ -709,7 +716,7 @@ function App() {
 
                 <img
                   src={bestMuttonMandhi}
-                  alt="Best Mutton Mandhi in Madurai at Arabian Mandhi"
+                  alt="Best Mutton Mandhi in Madurai at Arabian Mandhi Catering Services"
                   loading="lazy"
                 />
 
@@ -727,8 +734,9 @@ function App() {
 
                 <p>
                   Tender mutton served with fragrant Arabian
-                  mandhi rice — one of our signature dishes
-                  for mandhi lovers in Madurai.
+                  mandhi rice — a signature choice for mandhi
+                  lovers in Madurai. Available for pre-booked
+                  family and catering orders.
                 </p>
 
               </div>
@@ -744,7 +752,7 @@ function App() {
 
                 <img
                   src={bestChickenMandhi}
-                  alt="Best Chicken Mandhi in Madurai at Arabian Mandhi"
+                  alt="Best Chicken Mandhi in Madurai at Arabian Mandhi Catering Services"
                   loading="lazy"
                 />
 
@@ -762,8 +770,8 @@ function App() {
 
                 <p>
                   Juicy chicken served with aromatic Arabian
-                  mandhi rice, freshly prepared for families
-                  and food lovers in Madurai.
+                  mandhi rice, freshly prepared for families,
+                  parties and food lovers in Madurai.
                 </p>
 
               </div>
@@ -779,7 +787,7 @@ function App() {
 
                 <img
                   src={bestMuttonBiryani}
-                  alt="Best Mutton Biryani in Madurai at Arabian Mandhi"
+                  alt="Mutton Biryani in Madurai at Arabian Mandhi Catering Services"
                   loading="lazy"
                 />
 
@@ -792,7 +800,7 @@ function App() {
                 </span>
 
                 <h3>
-                  Best Mutton Biryani in Madurai
+                  Mutton Biryani in Madurai
                 </h3>
 
                 <p>
@@ -814,7 +822,7 @@ function App() {
 
                 <img
                   src={bestChickenBiryani}
-                  alt="Best Chicken Biryani in Madurai at Arabian Mandhi"
+                  alt="Chicken Biryani in Madurai at Arabian Mandhi Catering Services"
                   loading="lazy"
                 />
 
@@ -827,13 +835,13 @@ function App() {
                 </span>
 
                 <h3>
-                  Best Chicken Biryani in Madurai
+                  Chicken Biryani in Madurai
                 </h3>
 
                 <p>
                   Tasty chicken biryani prepared with fragrant
                   rice and traditional spices for a delicious
-                  Madurai dining experience.
+                  Madurai family meal or special occasion.
                 </p>
 
               </div>
@@ -874,8 +882,9 @@ function App() {
             </h3>
 
             <p>
-              Enjoy the best mandhi and tasty biryani in
-              Madurai, freshly prepared for you.
+              Enjoy delicious mandhi and biryani in Madurai,
+              freshly prepared for your pre-booked family,
+              party or catering order.
             </p>
 
             <a
@@ -883,7 +892,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
               className="primary-button"
-              aria-label="Order the best mandhi and biryani in Madurai on WhatsApp"
+              aria-label="Order mandhi and biryani in Madurai on WhatsApp"
             >
               WhatsApp Order
               <span>→</span>
@@ -1029,9 +1038,9 @@ function App() {
             </span>
 
             <h2 id="contact-title">
-              Come by.
+              Order ahead.
               <br />
-              <em>Order ahead.</em>
+              <em>Enjoy at home.</em>
             </h2>
 
             <div className="contact-row">
@@ -1071,7 +1080,7 @@ function App() {
                 </strong>
 
                 <p>
-                  +91 87783 95065, +91 94420 90704 
+                  +91 87783 95065, +91 94420 90704
                 </p>
 
               </div>
@@ -1086,7 +1095,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="primary-button"
               >
-                Get Directions →
+                View Location →
               </a>
 
               <a
@@ -1102,7 +1111,7 @@ function App() {
 
           <div
             className="map-placeholder"
-            aria-label="Arabian Mandhi location in Sellur, Madurai"
+            aria-label="Arabian Mandhi Catering Services location in Sellur, Madurai"
           >
 
             <span aria-hidden="true">
