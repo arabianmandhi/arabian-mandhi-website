@@ -1893,6 +1893,32 @@ footer nav a:hover {
   color: #f0b52f !important;
 }
 
+/* ================= HERO BOTTOM - RIGHT SIDE ================= */
+
+.hero-bottom {
+  justify-content: flex-end;
+  padding-right: 6vw;
+  font-weight: 700;
+  color: rgba(255, 230, 170, 0.95);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+
+  /* Bottom information strip is hidden on mobile */
+  .hero-bottom {
+    display: none;
+  }
+
+  .hero-buttons {
+    margin-bottom: 0;
+  }
+
+  .slider-controls {
+    bottom: 70px;
+  }
+}
 /* =========================================================
    ======================== TABLET =========================
    ========================================================= */
