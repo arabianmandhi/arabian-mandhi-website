@@ -1,22 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');/* ================= ROOT COLORS ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');
+
+
+/* =========================================================
+   ROOT COLORS
+   ========================================================= */
 
 :root {
   --black: #260303;
   --brown: #450606;
   --brown-light: #6f0808;
+
   --cream: #fff8e8;
   --cream-dark: #f4e5c8;
+
   --orange: #f0b52f;
   --orange-light: #ffd66b;
+
   --red: #a80708;
+
   --text: #2d0b0b;
   --muted: #705858;
+
   --white: #ffffff;
 }
 
-/* ================= RESET ================= */
+
+/* =========================================================
+   RESET
+   ========================================================= */
 
 * {
   margin: 0;
@@ -51,18 +66,24 @@ section {
   scroll-margin-top: 85px;
 }
 
-/* ================= HEADER ================= */
+
+/* =========================================================
+   HEADER
+   ========================================================= */
 
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+
   height: 88px;
   padding: 0 6vw;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   z-index: 1000;
 
   background:
@@ -99,23 +120,32 @@ section {
     0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* ================= LOGO ================= */
+
+/* =========================================================
+   LOGO
+   ========================================================= */
 
 .logo {
   display: flex;
   align-items: center;
+
   padding: 0;
   border-radius: 0;
+
   background: transparent !important;
+
   backdrop-filter: none;
   box-shadow: none;
 }
+
 .logo-symbol {
   width: 41px;
   height: 41px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   border-radius: 50%;
 
   background:
@@ -126,6 +156,7 @@ section {
     );
 
   color: #4a0808;
+
   font-size: 18px;
 
   box-shadow:
@@ -140,10 +171,14 @@ section {
 
 .arabic-brand {
   font-family: "Noto Naskh Arabic", serif;
+
   color: var(--orange-light);
+
   font-size: 15px;
   line-height: 0.9;
+
   margin-bottom: 4px;
+
   direction: rtl;
 
   text-shadow:
@@ -152,12 +187,17 @@ section {
 
 .logo strong {
   display: block;
+
   color: #fff8df;
+
   font-family: "Playfair Display", serif;
+
   font-size: 17px;
   font-weight: 600;
+
   letter-spacing: 1.4px;
   line-height: 1;
+
   white-space: nowrap;
 
   text-shadow:
@@ -166,27 +206,42 @@ section {
 
 .logo small {
   display: block;
+
   margin-top: 5px;
+
   color: #ffd66b;
+
   font-size: 6.5px;
   font-weight: 600;
+
   letter-spacing: 2px;
   line-height: 1;
+
   white-space: nowrap;
 }
-/* ================= LOGO IMAGE ================= */
+
+
+/* =========================================================
+   LOGO IMAGE
+   ========================================================= */
 
 .logo-image {
   width: 190px;
   height: 85px;
+
   display: block;
+
   object-fit: contain;
+
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
 }
 
-/* ================= NAVIGATION ================= */
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
 
 .navigation {
   display: flex;
@@ -196,21 +251,30 @@ section {
 
 .navigation a {
   position: relative;
+
   color: rgba(255, 220, 130, 0.85);
+
   font-size: 11px;
   font-weight: 600;
+
   padding: 8px 0;
+
   transition: color 0.25s ease;
 }
 
 .navigation a::after {
   content: "";
+
   position: absolute;
+
   left: 0;
   bottom: 0;
+
   width: 0;
   height: 1px;
+
   background: var(--orange-light);
+
   transition: width 0.3s ease;
 }
 
@@ -224,7 +288,10 @@ section {
   width: 100%;
 }
 
-/* ================= ORDER BUTTON ================= */
+
+/* =========================================================
+   ORDER BUTTON
+   ========================================================= */
 
 .order-button {
   background:
@@ -235,8 +302,11 @@ section {
     );
 
   color: #4a0808;
+
   padding: 12px 19px;
+
   border-radius: 30px;
+
   font-size: 11px;
   font-weight: 700;
 
@@ -251,30 +321,44 @@ section {
   transform: translateY(-2px);
 }
 
-/* ================= HAMBURGER ================= */
+
+/* =========================================================
+   HAMBURGER
+   ========================================================= */
 
 .hamburger {
   display: none;
+
   border: 0;
   background: none;
+
   color: var(--orange-light);
+
   font-size: 27px;
+
   cursor: pointer;
 }
 
-/* ================= HERO ================= */
+
+/* =========================================================
+   HERO
+   ========================================================= */
 
 .hero {
   height: 100vh;
   min-height: 680px;
+
   position: relative;
   overflow: hidden;
+
   background: var(--black);
+
   color: white;
 }
 
 .hero-track {
   display: flex;
+
   height: 100%;
 
   transition:
@@ -284,43 +368,45 @@ section {
 .hero-slide {
   min-width: 100%;
   height: 100%;
+
   position: relative;
 }
 
-/* ================= HERO FOOD IMAGES ================= */
+
+/* =========================================================
+   HERO FOOD IMAGES
+   ========================================================= */
 
 .hero-photo {
   position: absolute;
   inset: 0;
+
   overflow: hidden;
 }
 
 .hero-photo img {
   width: 100%;
   height: 100%;
+
   display: block;
+
   object-fit: cover;
   object-position: center center;
+
   transform: scale(1.2);
 }
 
-.hero-photo-1 .hero-photo img {
-  object-position: center center;
-}
-
-.hero-photo-2 .hero-photo img {
-  object-position: center center;
-}
-
-.hero-photo-3 .hero-photo img {
-  object-position: center center;
-}
-
+.hero-photo-1 .hero-photo img,
+.hero-photo-2 .hero-photo img,
+.hero-photo-3 .hero-photo img,
 .hero-photo-4 .hero-photo img {
   object-position: center center;
 }
 
-/* ================= HERO GRADIENT ================= */
+
+/* =========================================================
+   HERO GRADIENT
+   ========================================================= */
 
 .hero-gradient {
   position: absolute;
@@ -336,69 +422,134 @@ section {
     );
 }
 
-/* ================= HERO CONTENT ================= */
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
 
 .hero-content {
   position: absolute;
+
   z-index: 10;
+
   left: 9vw;
   top: 50%;
+
   transform: translateY(-40%);
+
   max-width: 700px;
 }
 
 .hero-arabic {
   font-family: "Noto Naskh Arabic", serif;
+
   color: var(--orange-light);
+
   font-size: 30px;
   font-weight: 700;
+
   margin-bottom: 10px;
+
   direction: rtl;
+
   width: fit-content;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-kicker {
   color: #ffd66b;
+
   font-size: 13px;
+
   letter-spacing: 4px;
+
   font-weight: 800;
+
   margin-bottom: 18px;
 }
 
- .hero h1 {
-   font-family: "El Messiri", serif;
+.hero h1 {
+  font-family: "El Messiri", serif;
+
   font-size: clamp(65px, 8vw, 110px);
+
   font-weight: 500;
+
   line-height: 0.85;
+
   letter-spacing: -3px;
+
   color: #ffffff;
 }
 
 .hero h1 em {
   color: var(--orange-light);
+
   font-style: normal;
+
   font-weight: 600;
 }
 
 .hero-subtitle {
   color: rgba(255, 245, 220, 0.78);
+
   margin-top: 23px;
+
   font-size: 13px;
+
   letter-spacing: 1px;
 }
 
 .hero-buttons {
   display: flex;
+
   gap: 10px;
+
   margin-top: 29px;
 }
 
-/* ================= BUTTONS ================= */
+
+/* =========================================================
+   HALAL BADGE
+   ========================================================= */
+
+.hero-halal {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  padding: 9px 18px;
+
+  border: 1px solid rgba(245, 197, 66, 0.8);
+
+  border-radius: 999px;
+
+  color: #f5c542;
+
+  background: rgba(0, 0, 0, 0.3);
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
 
 .primary-button {
   display: inline-flex;
+
   align-items: center;
+
   gap: 14px;
 
   background:
@@ -409,9 +560,13 @@ section {
     );
 
   color: #4a0808;
+
   padding: 14px 21px;
+
   border-radius: 30px;
+
   font-size: 11px;
+
   font-weight: 700;
 
   transition: 0.3s;
@@ -422,148 +577,217 @@ section {
 
 .primary-button:hover {
   background: #ffe18c;
+
   transform: translateY(-2px);
 }
 
 .secondary-button,
 .outline-button {
   display: inline-flex;
+
   align-items: center;
 
   border: 1px solid rgba(255, 214, 107, 0.5);
+
   background: rgba(80, 0, 0, 0.3);
 
   color: #ffe4a0;
+
   padding: 14px 21px;
+
   border-radius: 30px;
+
   font-size: 11px;
 
   backdrop-filter: blur(8px);
+
   transition: 0.3s;
 }
 
 .secondary-button:hover {
   background: rgba(255, 205, 80, 0.15);
+
   border-color: var(--orange-light);
+
   color: white;
 }
 
-/* ================= SLIDER ================= */
+
+/* =========================================================
+   SLIDER
+   ========================================================= */
 
 .slider-controls {
   position: absolute;
+
   z-index: 15;
+
   right: 7vw;
   bottom: 90px;
 
   display: flex;
+
   align-items: center;
+
   gap: 16px;
 }
 
 .slider-controls > button {
   width: 40px;
   height: 40px;
+
   border-radius: 50%;
 
   border: 1px solid rgba(255, 214, 107, 0.4);
+
   background: rgba(70, 0, 0, 0.35);
 
   color: var(--orange-light);
+
   cursor: pointer;
 }
 
 .slider-dots {
   display: flex;
+
   gap: 7px;
 }
 
 .dot {
   width: 23px;
   height: 2px;
+
   border: 0;
+
   background: rgba(255, 220, 140, 0.3);
+
   cursor: pointer;
+
   transition: 0.4s;
 }
 
 .dot.active {
   width: 42px;
+
   background: var(--orange-light);
 }
 
-/* ================= HERO BOTTOM ================= */
+
+/* =========================================================
+   HERO BOTTOM
+   ========================================================= */
 
 .hero-bottom {
   position: absolute;
+
   bottom: 0;
+
   left: 0;
   right: 0;
+
   height: 50px;
+
   padding: 0 6vw;
+
   z-index: 15;
 
   display: flex;
+
   align-items: center;
+
+  justify-content: flex-end;
+
   gap: 17px;
 
   border-top: 1px solid rgba(255, 214, 107, 0.2);
 
-  color: rgba(255, 220, 150, 0.65);
+  color: rgba(255, 230, 170, 0.95);
+
   font-size: 8px;
+
+  font-weight: 700;
+
   letter-spacing: 2px;
+
+  text-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.7);
 }
 
 .hero-bottom i {
   width: 3px;
   height: 3px;
+
   background: var(--orange);
+
   border-radius: 50%;
 }
 
-/* ================= GENERAL ================= */
+
+/* =========================================================
+   GENERAL
+   ========================================================= */
 
 .label {
   display: block;
+
   color: var(--orange);
+
   font-size: 9px;
+
   letter-spacing: 3px;
+
   font-weight: 700;
+
   margin-bottom: 16px;
 }
 
 h2 {
   font-family: "Playfair Display", serif;
+
   font-size: clamp(45px, 5vw, 70px);
+
   line-height: 0.98;
+
   font-weight: 500;
 }
 
 h2 em {
   color: var(--orange);
+
   font-style: italic;
 }
 
 p {
   line-height: 1.75;
+
   color: var(--muted);
 }
 
-/* ================= INTRO ================= */
+
+/* =========================================================
+   INTRO
+   ========================================================= */
 
 .intro {
   padding: 90px 7vw;
+
   text-align: center;
+
   max-width: 850px;
+
   margin: auto;
 }
 
 .intro p {
   max-width: 600px;
+
   margin: 22px auto 0;
 }
 
-/* ================= MENU ================= */
+
+/* =========================================================
+   MENU
+   ========================================================= */
 
 .menu {
   background:
@@ -578,50 +802,86 @@ p {
 
 .section-heading {
   display: flex;
+
   justify-content: space-between;
+
   align-items: flex-end;
+
   margin-bottom: 40px;
 }
 
-/* CENTER OUR MENU HEADING */
+
+/* CENTER MENU HEADING */
+
 .menu .section-heading {
   justify-content: center;
+
   align-items: center;
+
   text-align: center;
 }
 
 .menu .section-heading > div {
   width: 100%;
+
   text-align: center;
 }
 
 .section-heading > a {
   font-size: 11px;
+
   font-weight: 700;
+
   color: #8d0505;
+
   border-bottom: 1px solid var(--orange);
+
   padding-bottom: 4px;
 }
 
-/* Hide old image-card grid */
+
+/* =========================================================
+   HIDE OLD IMAGE-CARD GRID
+   ========================================================= */
 
 .menu-grid {
   display: none;
 }
 
-/* ================= MENU 2x2 CATEGORY GRID ================= */
+
+/* =========================================================
+   MENU 3x2 CATEGORY GRID
+   ========================================================= */
 
 .menu-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-  max-width: 1000px;
+  width: 100%;
+
+  max-width: 1100px;
+
   margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 20px;
+
+  justify-content: center;
+
+  align-items: stretch;
 }
 
-/* ================= MENU CATEGORY CARD ================= */
+
+/* =========================================================
+   MENU CATEGORY CARD
+   ========================================================= */
 
 .menu-category {
+  width: 100%;
+
+  min-width: 0;
+
   background:
     linear-gradient(
       145deg,
@@ -636,8 +896,6 @@ p {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-
-  min-width: 0;
 }
 
 .menu-category:hover {
@@ -647,11 +905,16 @@ p {
     0 15px 30px rgba(80, 5, 5, 0.12);
 }
 
-/* ================= CATEGORY HEADER ================= */
+
+/* =========================================================
+   CATEGORY HEADER
+   ========================================================= */
 
 .menu-category-header {
   display: flex;
+
   align-items: center;
+
   gap: 14px;
 
   padding-bottom: 15px;
@@ -661,34 +924,53 @@ p {
 
 .menu-category-header .menu-number {
   color: var(--orange);
+
   font-size: 9px;
+
   font-weight: 700;
+
   letter-spacing: 2px;
+
   flex-shrink: 0;
 }
 
 .menu-category-header h3 {
   margin: 0;
+
   font-family: "Playfair Display", serif;
+
   font-size: 27px;
+
   font-weight: 500;
+
   color: #640404;
 }
 
-/* ================= DISH LIST ================= */
+
+/* =========================================================
+   DISH LIST
+   ========================================================= */
 
 .dish-list {
   display: flex;
+
   flex-direction: column;
 }
 
-/* ================= DISH CARD ================= */
+
+/* =========================================================
+   DISH CARD
+   ========================================================= */
 
 .dish-card {
   display: flex;
+
   align-items: center;
+
   gap: 11px;
+
   min-height: 50px;
+
   padding: 10px 2px;
 
   border-bottom: 1px solid rgba(100, 10, 10, 0.08);
@@ -704,44 +986,68 @@ p {
 
 .dish-card:hover {
   padding-left: 7px;
+
   background: rgba(255, 214, 107, 0.08);
 }
 
-/* ================= DISH DOT ================= */
+
+/* =========================================================
+   DISH DOT
+   ========================================================= */
 
 .dish-dot {
   width: 6px;
   height: 6px;
+
   flex-shrink: 0;
+
   border-radius: 50%;
+
   background: var(--orange);
 }
 
-/* ================= DISH NAME ================= */
+
+/* =========================================================
+   DISH NAME
+   ========================================================= */
 
 .dish-name {
   flex: 1;
+
   color: #4d1818;
+
   font-size: 12px;
+
   font-weight: 600;
+
   line-height: 1.4;
 }
 
-/* ================= DISH ARROW ================= */
+
+/* =========================================================
+   DISH ARROW
+   ========================================================= */
 
 .dish-arrow {
   color: #9b6a20;
+
   font-size: 12px;
+
   opacity: 0.65;
+
   transition: 0.25s ease;
 }
 
 .dish-card:hover .dish-arrow {
   transform: translateX(4px);
+
   opacity: 1;
 }
 
-/* ================= CATERING ================= */
+
+/* =========================================================
+   CATERING
+   ========================================================= */
 
 .catering {
   background:
@@ -753,17 +1059,21 @@ p {
     );
 
   color: white;
+
   padding: 100px 7vw;
 
   display: grid;
+
   grid-template-columns: 1.3fr 1fr;
 
   align-items: center;
+
   gap: 70px;
 }
 
 .catering h2 {
   font-size: clamp(48px, 6vw, 80px);
+
   color: #ffffff;
 }
 
@@ -773,7 +1083,9 @@ p {
 
 .catering p {
   color: #e1c2a9;
+
   max-width: 500px;
+
   margin: 25px 0;
 }
 
@@ -783,7 +1095,9 @@ p {
 
 .occasion-list div {
   display: flex;
+
   align-items: center;
+
   gap: 25px;
 
   padding: 27px 0 27px 40px;
@@ -793,17 +1107,24 @@ p {
 
 .occasion-list span {
   color: var(--orange);
+
   font-size: 9px;
 }
 
 .occasion-list strong {
   font-family: "Playfair Display", serif;
+
   font-size: 24px;
+
   font-weight: 500;
+
   color: #ffe0a0;
 }
 
-/* ================= SERVICES ================= */
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
 
 .services {
   padding: 90px 7vw;
@@ -822,7 +1143,9 @@ p {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-columns:
+    repeat(4, 1fr);
 
   border-top: 1px solid rgba(100, 10, 10, 0.15);
 }
@@ -841,15 +1164,21 @@ p {
 
 .services-grid span {
   color: var(--orange);
+
   font-size: 9px;
+
   letter-spacing: 2px;
 }
 
 .services-grid h3 {
   font-family: "Playfair Display", serif;
+
   font-size: 24px;
+
   font-weight: 500;
+
   margin: 18px 0 8px;
+
   color: #6f0808;
 }
 
@@ -857,8 +1186,9 @@ p {
   font-size: 12px;
 }
 
+
 /* =========================================================
-   ======================= GALLERY =========================
+   GALLERY
    ========================================================= */
 
 .gallery {
@@ -871,18 +1201,23 @@ p {
     );
 
   color: white;
+
   padding: 100px 7vw;
+
   text-align: center;
 }
 
 .gallery .section-heading {
   margin-bottom: 45px;
+
   justify-content: center;
+
   text-align: center;
 }
 
 .gallery .section-heading > div {
   max-width: 800px;
+
   margin: 0 auto;
 }
 
@@ -896,49 +1231,68 @@ p {
 
 .gallery-intro {
   max-width: 680px;
+
   margin: 20px auto 0;
+
   color: rgba(255, 230, 190, 0.72);
+
   font-size: 13px;
+
   line-height: 1.8;
 }
 
 .gallery-controls {
   display: flex;
+
   gap: 8px;
 }
 
 .gallery-controls button {
   width: 43px;
   height: 43px;
+
   border-radius: 50%;
 
   border: 1px solid rgba(255, 214, 107, 0.4);
 
   background: transparent;
+
   color: var(--orange-light);
 
   cursor: pointer;
+
   transition: 0.3s ease;
 }
 
 .gallery-controls button:hover {
   background: var(--orange);
+
   color: #4a0808;
+
   transform: translateY(-2px);
 }
 
-/* ================= DISH GRID ================= */
+
+/* =========================================================
+   DISH GRID
+   ========================================================= */
 
 .dish-gallery {
   display: grid;
+
   grid-template-columns: 1fr 1fr;
+
   gap: 18px;
 
   max-width: 1200px;
+
   margin: 50px auto 0;
 }
 
-/* ================= DISH GALLERY CARD ================= */
+
+/* =========================================================
+   DISH GALLERY CARD
+   ========================================================= */
 
 .dish-gallery-card {
   background:
@@ -966,20 +1320,24 @@ p {
     0 22px 45px rgba(0, 0, 0, 0.28);
 }
 
+
 /* =========================================================
-   =================== IMAGE AREA FIX ======================
+   IMAGE AREA
    ========================================================= */
 
 .dish-gallery-image {
   width: 100%;
+
   height: 300px;
 
   padding: 0;
+
   margin: 0;
 
   display: block;
 
   position: relative;
+
   overflow: hidden;
 
   background:
@@ -989,8 +1347,6 @@ p {
       #4b0202 72%
     );
 }
-
-/* ACTUAL IMAGE */
 
 .dish-gallery-image img {
   display: block;
@@ -1004,10 +1360,9 @@ p {
   padding: 0;
 
   object-fit: cover;
+
   object-position: center;
 }
-
-/* Individual gallery backgrounds */
 
 .dish-gallery-image-2 {
   background:
@@ -1036,29 +1391,35 @@ p {
     );
 }
 
-/* Placeholder */
-
 .dish-gallery-image span {
   position: absolute;
+
   inset: 0;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
   color: rgba(255, 220, 150, 0.42);
 
   font-size: 9px;
+
   letter-spacing: 4px;
+
   font-weight: 600;
 
   pointer-events: none;
 }
 
-/* ================= DISH INFORMATION ================= */
+
+/* =========================================================
+   DISH INFORMATION
+   ========================================================= */
 
 .dish-gallery-info {
   padding: 24px 25px 27px;
+
   text-align: left;
 }
 
@@ -1066,8 +1427,11 @@ p {
   display: block;
 
   color: #a56c18;
+
   font-size: 8px;
+
   font-weight: 700;
+
   letter-spacing: 2px;
 }
 
@@ -1079,6 +1443,7 @@ p {
   font-family: "Playfair Display", serif;
 
   font-size: 28px;
+
   font-weight: 500;
 }
 
@@ -1088,26 +1453,36 @@ p {
   color: #705858;
 
   font-size: 11px;
+
   line-height: 1.7;
 
   max-width: 470px;
 }
 
-/* ================= VIEW ALL ================= */
+
+/* =========================================================
+   VIEW ALL
+   ========================================================= */
 
 .gallery-bottom {
   display: flex;
+
   justify-content: center;
+
   margin-top: 45px;
 }
 
 .view-all-dishes {
   display: inline-flex;
+
   align-items: center;
+
   justify-content: center;
+
   gap: 12px;
 
   text-decoration: none;
+
   font-weight: 600;
 
   padding: 14px 26px;
@@ -1125,7 +1500,9 @@ p {
 
 .view-all-dishes:hover {
   background: var(--orange);
+
   color: #4a0808;
+
   transform: translateY(-2px);
 }
 
@@ -1133,12 +1510,16 @@ p {
   font-size: 20px;
 }
 
-/* ================= ORDER CTA ================= */
+
+/* =========================================================
+   ORDER CTA
+   ========================================================= */
 
 .gallery-order {
   max-width: 700px;
 
   margin: 80px auto 0;
+
   padding-top: 55px;
 
   border-top: 1px solid rgba(255, 214, 107, 0.16);
@@ -1152,7 +1533,9 @@ p {
   color: var(--orange);
 
   font-size: 9px;
+
   font-weight: 700;
+
   letter-spacing: 3px;
 }
 
@@ -1164,6 +1547,7 @@ p {
   font-size: clamp(38px, 5vw, 58px);
 
   font-weight: 500;
+
   line-height: 1;
 
   color: #fff8df;
@@ -1187,13 +1571,18 @@ p {
   display: inline-flex;
 }
 
-/* ================= REVIEWS ================= */
+
+/* =========================================================
+   REVIEWS
+   ========================================================= */
 
 .reviews {
   padding: 100px 7vw;
 
   display: grid;
-  grid-template-columns: 0.85fr 1.5fr;
+
+  grid-template-columns:
+    0.85fr 1.5fr;
 
   gap: 70px;
 
@@ -1217,17 +1606,19 @@ p {
   margin-top: 25px;
 
   font-size: 13px;
+
   color: var(--muted);
 }
 
-/* ================= RATING ================= */
-
 .reviews-rating {
   display: flex;
+
   align-items: center;
+
   gap: 18px;
 
   margin-top: 35px;
+
   padding-top: 25px;
 
   border-top: 1px solid rgba(100, 10, 10, 0.12);
@@ -1237,6 +1628,7 @@ p {
   font-family: "Playfair Display", serif;
 
   font-size: 65px;
+
   line-height: 1;
 
   color: var(--red);
@@ -1246,6 +1638,7 @@ p {
   color: var(--orange);
 
   font-size: 18px;
+
   letter-spacing: 3px;
 }
 
@@ -1261,15 +1654,14 @@ p {
   letter-spacing: 0.5px;
 }
 
-/* ================= REVIEW CONTENT ================= */
-
 .reviews-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+
+  grid-template-columns:
+    1fr 1fr;
+
   gap: 15px;
 }
-
-/* ================= REVIEW CARD ================= */
 
 .review-card {
   position: relative;
@@ -1300,11 +1692,11 @@ p {
     0 18px 35px rgba(80, 5, 5, 0.13);
 }
 
-/* ================= REVIEW TOP ================= */
-
 .review-card-top {
   display: flex;
+
   align-items: center;
+
   gap: 12px;
 }
 
@@ -1315,6 +1707,7 @@ p {
   flex-shrink: 0;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
@@ -1342,6 +1735,7 @@ p {
   font-family: "Playfair Display", serif;
 
   font-size: 16px;
+
   font-weight: 600;
 }
 
@@ -1353,6 +1747,7 @@ p {
   color: var(--muted);
 
   font-size: 8px;
+
   letter-spacing: 0.5px;
 }
 
@@ -1363,23 +1758,25 @@ p {
   height: 28px;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
   border-radius: 50%;
 
   background: white;
+
   color: #4285f4;
 
   font-family: Arial, sans-serif;
+
   font-weight: 700;
+
   font-size: 15px;
 
   box-shadow:
     0 2px 8px rgba(0, 0, 0, 0.08);
 }
-
-/* ================= REVIEW STARS ================= */
 
 .review-stars {
   margin-top: 20px;
@@ -1387,10 +1784,9 @@ p {
   color: var(--orange);
 
   font-size: 13px;
+
   letter-spacing: 3px;
 }
-
-/* ================= REVIEW TEXT ================= */
 
 .review-card p {
   margin-top: 12px;
@@ -1398,18 +1794,24 @@ p {
   font-family: "Playfair Display", serif;
 
   font-size: 14px;
+
   line-height: 1.7;
 
   color: #5d3838;
 }
 
-/* ================= REVIEW ACTIONS ================= */
+
+/* =========================================================
+   REVIEW ACTIONS
+   ========================================================= */
 
 .review-actions {
   grid-column: 1 / -1;
 
   display: flex;
+
   align-items: center;
+
   gap: 14px;
 
   margin-top: 10px;
@@ -1417,8 +1819,11 @@ p {
 
 .write-review-button {
   display: inline-flex;
+
   align-items: center;
+
   justify-content: center;
+
   gap: 8px;
 
   padding: 14px 22px;
@@ -1435,6 +1840,7 @@ p {
   color: #4a0808;
 
   font-size: 10px;
+
   font-weight: 700;
 
   box-shadow:
@@ -1445,11 +1851,13 @@ p {
 
 .write-review-button:hover {
   transform: translateY(-2px);
+
   background: #ffe18c;
 }
 
 .view-reviews-button {
   display: inline-flex;
+
   align-items: center;
 
   padding: 14px 20px;
@@ -1461,6 +1869,7 @@ p {
   color: #640404;
 
   font-size: 10px;
+
   font-weight: 700;
 
   transition: 0.3s;
@@ -1468,15 +1877,22 @@ p {
 
 .view-reviews-button:hover {
   border-color: var(--orange);
+
   background: rgba(255, 214, 107, 0.12);
+
   transform: translateY(-2px);
 }
 
-/* ================= LOCATION ================= */
+
+/* =========================================================
+   LOCATION
+   ========================================================= */
 
 .location {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+
+  grid-template-columns:
+    1fr 1fr;
 
   background:
     linear-gradient(
@@ -1490,16 +1906,17 @@ p {
   padding: 90px 7vw;
 }
 
-/* ================= CONTACT DETAILS ================= */
-
 .location address {
   font-style: normal;
 }
 
 .contact-row {
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
+
   justify-content: center;
 
   gap: 8px;
@@ -1511,6 +1928,7 @@ p {
 
 .contact-row > span {
   font-size: 24px;
+
   color: var(--red);
 }
 
@@ -1524,6 +1942,7 @@ p {
   text-align: center;
 
   font-size: 12px;
+
   color: #640404;
 }
 
@@ -1537,16 +1956,17 @@ p {
 
 .contact-row a {
   color: #640404;
+
   font-weight: 600;
 }
 
-/* ================= CONTACT BUTTONS ================= */
-
 .contact-buttons {
   display: flex;
+
   flex-direction: row;
 
   align-items: center;
+
   justify-content: center;
 
   gap: 10px;
@@ -1571,15 +1991,15 @@ p {
   background: transparent;
 }
 
-/* ================= MAP ================= */
-
 .map-placeholder {
   min-height: 570px;
 
   display: flex;
+
   flex-direction: column;
 
   justify-content: center;
+
   align-items: center;
 
   text-align: center;
@@ -1596,6 +2016,7 @@ p {
 
 .map-placeholder > span {
   font-size: 48px;
+
   color: var(--orange-light);
 }
 
@@ -1611,16 +2032,22 @@ p {
 
 .map-placeholder small {
   margin-top: 5px;
+
   color: #e9bb78;
 }
 
-/* ================= SOCIAL ================= */
+
+/* =========================================================
+   SOCIAL
+   ========================================================= */
 
 .social {
   padding: 90px 7vw;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+
+  grid-template-columns:
+    1fr 1fr;
 
   gap: 70px;
 
@@ -1639,7 +2066,9 @@ p {
 
 .social-links a {
   display: grid;
-  grid-template-columns: 55px 1fr 30px;
+
+  grid-template-columns:
+    55px 1fr 30px;
 
   align-items: center;
 
@@ -1659,6 +2088,7 @@ p {
   height: 38px;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
@@ -1677,6 +2107,7 @@ p {
 
 .social-links a:hover .social-icon {
   background: var(--orange);
+
   color: #4a0808;
 }
 
@@ -1686,11 +2117,13 @@ p {
 
 .facebook-icon {
   font-weight: 700;
+
   font-size: 23px;
 }
 
 .x-icon {
   font-size: 18px;
+
   font-weight: 500;
 }
 
@@ -1700,6 +2133,7 @@ p {
   font-family: "Playfair Display", serif;
 
   font-size: 24px;
+
   font-weight: 500;
 
   color: #640404;
@@ -1713,6 +2147,7 @@ p {
   color: var(--muted);
 
   font-size: 10px;
+
   letter-spacing: 0.5px;
 }
 
@@ -1720,13 +2155,15 @@ p {
   font-family: Arial;
 
   font-size: 16px;
+
   font-weight: 400;
 
   color: #810505;
 }
 
+
 /* =========================================================
-   ======================== FOOTER =========================
+   FOOTER
    ========================================================= */
 
 footer {
@@ -1742,6 +2179,7 @@ footer {
   padding: 32px 7vw 22px;
 
   display: flex;
+
   flex-direction: column;
 
   align-items: center;
@@ -1751,11 +2189,11 @@ footer {
   gap: 18px;
 }
 
-/* Footer branding */
-
 .footer-logo {
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
 }
 
@@ -1763,6 +2201,7 @@ footer {
   font-family: "Playfair Display", serif;
 
   font-size: 17px;
+
   font-weight: 500;
 
   letter-spacing: 1.5px;
@@ -1776,17 +2215,17 @@ footer {
   color: #d99e63;
 
   font-size: 7px;
+
   letter-spacing: 2px;
 
   margin-top: 5px;
 }
 
-/* Footer links */
-
 footer nav {
   display: flex;
 
   align-items: center;
+
   justify-content: center;
 
   gap: 22px;
@@ -1796,6 +2235,7 @@ footer nav a {
   color: #e8bd75;
 
   font-size: 9px;
+
   font-weight: 500;
 
   transition: 0.25s ease;
@@ -1804,8 +2244,6 @@ footer nav a {
 footer nav a:hover {
   color: var(--orange-light);
 }
-
-/* Copyright */
 
 .copyright {
   width: 100%;
@@ -1817,11 +2255,15 @@ footer nav a:hover {
   color: #b98263;
 
   font-size: 8px;
+
   line-height: 1.6;
 }
-/* ================= SECTION HEADING COLORS ================= */
 
-/* INTRO - Cream background */
+
+/* =========================================================
+   SECTION HEADING COLORS
+   ========================================================= */
+
 .intro h2 {
   color: #260303;
 }
@@ -1830,7 +2272,6 @@ footer nav a:hover {
   color: var(--orange);
 }
 
-/* MENU - Cream background */
 .menu h2 {
   color: #260303;
 }
@@ -1839,7 +2280,6 @@ footer nav a:hover {
   color: var(--orange);
 }
 
-/* CATERING - Dark background */
 .catering h2 {
   color: #ffffff;
 }
@@ -1848,7 +2288,6 @@ footer nav a:hover {
   color: var(--orange-light);
 }
 
-/* SERVICES - Cream background */
 .services h2 {
   color: #260303;
 }
@@ -1857,7 +2296,6 @@ footer nav a:hover {
   color: var(--orange);
 }
 
-/* GALLERY - Dark background */
 .gallery h2 {
   color: #ffffff;
 }
@@ -1866,7 +2304,6 @@ footer nav a:hover {
   color: var(--orange-light);
 }
 
-/* REVIEWS - Cream background */
 .reviews h2 {
   color: #4b0202;
 }
@@ -1875,7 +2312,6 @@ footer nav a:hover {
   color: var(--orange);
 }
 
-/* LOCATION - Cream background */
 .location h2 {
   color: #260303;
 }
@@ -1884,7 +2320,6 @@ footer nav a:hover {
   color: var(--orange);
 }
 
-/* SOCIAL - Cream background */
 .social h2 {
   color: #4b0202 !important;
 }
@@ -1893,40 +2328,16 @@ footer nav a:hover {
   color: #f0b52f !important;
 }
 
-/* ================= HERO BOTTOM - RIGHT SIDE ================= */
 
-.hero-bottom {
-  justify-content: flex-end;
-  padding-right: 6vw;
-  font-weight: 700;
-  color: rgba(255, 230, 170, 0.95);
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
-}
-
-/* ================= MOBILE ================= */
-@media (max-width: 600px) {
-
-  /* Bottom information strip is hidden on mobile */
-  .hero-bottom {
-    display: none;
-  }
-
-  .hero-buttons {
-    margin-bottom: 0;
-  }
-
-  .slider-controls {
-    bottom: 70px;
-  }
-}
 /* =========================================================
-   ======================== TABLET =========================
+   TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
 
   .header {
     height: 72px;
+
     padding: 0 4vw;
   }
 
@@ -1934,12 +2345,16 @@ footer nav a:hover {
     height: 64px;
   }
 
+
+  /* ---------------- NAVIGATION ---------------- */
+
   .navigation {
     display: none;
 
     position: fixed;
 
     top: 72px;
+
     left: 0;
     right: 0;
 
@@ -1954,6 +2369,7 @@ footer nav a:hover {
     backdrop-filter: blur(18px);
 
     flex-direction: column;
+
     align-items: flex-start;
 
     padding: 25px 7vw;
@@ -1985,8 +2401,12 @@ footer nav a:hover {
     display: none;
   }
 
+
+  /* ---------------- HERO ---------------- */
+
   .hero-content {
     left: 7vw;
+
     right: 7vw;
   }
 
@@ -1994,54 +2414,100 @@ footer nav a:hover {
     font-size: clamp(58px, 13vw, 90px);
   }
 
-  /* MENU REMAINS 2 COLUMNS */
+
+  /* ---------------- TABLET MENU ---------------- */
 
   .menu-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+
+    max-width: 900px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
     gap: 15px;
+
+    justify-content: center;
+
+    align-items: stretch;
   }
 
   .menu-category {
-    padding: 20px;
+    width: 100%;
+
+    padding: 20px 15px;
+  }
+
+  .menu-category-header {
+    gap: 8px;
   }
 
   .menu-category-header h3 {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .dish-name {
-    font-size: 11px;
+    font-size: 10px;
   }
+
+  .dish-card {
+    gap: 7px;
+  }
+
+
+  /* ---------------- CATERING ---------------- */
 
   .catering {
     grid-template-columns: 1fr;
   }
 
+
+  /* ---------------- SERVICES ---------------- */
+
   .services-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+      1fr 1fr;
   }
+
+
+  /* ---------------- REVIEWS ---------------- */
 
   .reviews {
     grid-template-columns: 1fr;
   }
 
+
+  /* ---------------- LOCATION ---------------- */
+
   .location {
     grid-template-columns: 1fr;
   }
+
+
+  /* ---------------- SOCIAL ---------------- */
 
   .social {
     grid-template-columns: 1fr;
   }
 }
 
+
 /* =========================================================
-   ======================== MOBILE =========================
+   MOBILE
    ========================================================= */
 
 @media (max-width: 600px) {
 
+  /* ---------------- HEADER ---------------- */
+
   .header {
     height: 70px;
+
     padding: 0 3vw;
   }
 
@@ -2051,34 +2517,49 @@ footer nav a:hover {
 
   .logo {
     gap: 8px;
+
     padding-right: 9px;
   }
 
   .logo-symbol {
     width: 32px;
     height: 32px;
+
     font-size: 14px;
   }
 
   .arabic-brand {
     font-size: 10px;
+
     margin-bottom: 2px;
   }
 
   .logo strong {
     font-size: 11px;
+
     letter-spacing: 0.8px;
   }
 
   .logo small {
     font-size: 4.5px;
+
     letter-spacing: 1.2px;
+
     margin-top: 3px;
+  }
+
+  .logo-image {
+    width: 115px;
+
+    height: auto;
   }
 
   .navigation {
     top: 70px;
   }
+
+
+  /* ---------------- HERO ---------------- */
 
   .hero {
     min-height: 650px;
@@ -2089,26 +2570,34 @@ footer nav a:hover {
   }
 
   .hero-arabic {
-  font-size: 23px;
-  font-weight: 700;
-}
+    font-size: 23px;
 
-.hero-kicker {
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 3px;
-}
+    font-weight: 700;
+  }
 
-.hero-halal {
-  margin-bottom: 14px;
-  padding: 8px 15px;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
+  .hero-kicker {
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+  }
+
+  .hero-halal {
+    margin-bottom: 14px;
+
+    padding: 8px 15px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+  }
 
   .hero h1 {
     font-size: 58px;
+
     letter-spacing: -2px;
   }
 
@@ -2118,22 +2607,29 @@ footer nav a:hover {
 
   .hero-buttons {
     gap: 7px;
+
+    margin-bottom: 0;
   }
 
   .primary-button,
   .secondary-button {
     padding: 12px 14px;
+
     font-size: 9px;
   }
 
   .slider-controls {
     right: 5vw;
+
     bottom: 70px;
   }
 
   .hero-bottom {
     display: none;
   }
+
+
+  /* ---------------- SECTION PADDING ---------------- */
 
   .intro,
   .menu,
@@ -2144,57 +2640,93 @@ footer nav a:hover {
     padding: 65px 6vw;
   }
 
+
+  /* ---------------- SECTION HEADINGS ---------------- */
+
   .section-heading {
     align-items: flex-start;
+
     flex-direction: column;
+
     gap: 20px;
   }
+
   .menu .section-heading {
     align-items: center;
+
     text-align: center;
   }
 
   .menu .section-heading > div {
     width: 100%;
+
     text-align: center;
   }
-  /* ================= MOBILE MENU ================= */
+
+
+  /* =====================================================
+     MOBILE MENU
+     EXACT 3 COLUMNS
+     ===================================================== */
 
   .menu-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
     width: 100%;
+
+    max-width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 8px;
+
+    justify-content: center;
+
+    align-items: stretch;
   }
 
   .menu-category {
-    padding: 15px 12px;
-    border-radius: 0;
+    width: 100%;
+
+    min-width: 0;
+
+    padding: 13px 8px;
   }
 
   .menu-category-header {
-    gap: 7px;
-    padding-bottom: 10px;
+    gap: 4px;
+
+    padding-bottom: 9px;
+
     align-items: center;
   }
 
   .menu-category-header .menu-number {
-    font-size: 7px;
-    letter-spacing: 1px;
+    font-size: 6px;
+
+    letter-spacing: 0.7px;
   }
 
   .menu-category-header h3 {
-    font-size: 18px;
+    font-size: 15px;
+
     line-height: 1.1;
   }
 
   .dish-card {
-    min-height: 43px;
-    padding: 8px 1px;
-    gap: 7px;
+    min-height: 40px;
+
+    padding: 7px 0;
+
+    gap: 4px;
   }
 
   .dish-card:hover {
-    padding-left: 3px;
+    padding-left: 2px;
   }
 
   .dish-dot {
@@ -2203,19 +2735,17 @@ footer nav a:hover {
   }
 
   .dish-name {
-    font-size: 9px;
-    line-height: 1.3;
+    font-size: 7.5px;
+
+    line-height: 1.25;
   }
 
   .dish-arrow {
-    font-size: 9px;
+    font-size: 7px;
   }
-  .logo-image {
-  width: 115px;
-  height: auto;
-}
 
-  /* ================= SERVICES ================= */
+
+  /* ---------------- SERVICES ---------------- */
 
   .services-grid {
     grid-template-columns: 1fr;
@@ -2224,7 +2754,8 @@ footer nav a:hover {
   .services-grid > article {
     border-right: 0;
 
-    border-bottom: 1px solid rgba(100, 10, 10, 0.12);
+    border-bottom:
+      1px solid rgba(100, 10, 10, 0.12);
 
     margin: 0;
   }
@@ -2233,9 +2764,10 @@ footer nav a:hover {
     border-bottom: 0;
   }
 
-  /* =======================================================
-     ================= MOBILE GALLERY =======================
-     ======================================================= */
+
+  /* =====================================================
+     MOBILE GALLERY
+     ===================================================== */
 
   .gallery {
     padding: 65px 6vw;
@@ -2247,7 +2779,9 @@ footer nav a:hover {
 
   .gallery-intro {
     font-size: 11px;
+
     line-height: 1.7;
+
     margin-top: 15px;
   }
 
@@ -2257,28 +2791,33 @@ footer nav a:hover {
 
   .dish-gallery {
     grid-template-columns: 1fr 1fr;
+
     gap: 8px;
+
     width: 100%;
   }
 
   .dish-gallery-card {
     min-width: 0;
+
     width: 100%;
+
     overflow: hidden;
   }
 
-  /* IMAGE FILLS ENTIRE CARD WIDTH */
-
   .dish-gallery-image {
     width: 100%;
+
     height: 145px;
 
     display: block;
 
     padding: 0;
+
     margin: 0;
 
     position: relative;
+
     overflow: hidden;
   }
 
@@ -2286,19 +2825,23 @@ footer nav a:hover {
     display: block;
 
     width: 100%;
+
     height: 100%;
 
     max-width: none;
 
     padding: 0;
+
     margin: 0;
 
     object-fit: cover;
+
     object-position: center;
   }
 
   .dish-gallery-image span {
     font-size: 6px;
+
     letter-spacing: 2px;
   }
 
@@ -2308,17 +2851,21 @@ footer nav a:hover {
 
   .dish-gallery-number {
     font-size: 6px;
+
     letter-spacing: 1px;
   }
 
   .dish-gallery-info h3 {
     font-size: 17px;
+
     margin-top: 5px;
   }
 
   .dish-gallery-info p {
     font-size: 8px;
+
     line-height: 1.5;
+
     margin-top: 6px;
   }
 
@@ -2328,16 +2875,19 @@ footer nav a:hover {
 
   .view-all-dishes {
     padding: 11px 17px;
+
     font-size: 8px;
   }
 
   .gallery-order {
     margin-top: 55px;
+
     padding-top: 40px;
   }
 
   .gallery-order-label {
     font-size: 7px;
+
     letter-spacing: 2px;
   }
 
@@ -2347,23 +2897,31 @@ footer nav a:hover {
 
   .gallery-order p {
     font-size: 10px;
+
     margin-top: 14px;
   }
 
   .gallery-order .primary-button {
     padding: 12px 18px;
+
     font-size: 9px;
   }
 
-  /* ================= MOBILE REVIEWS ================= */
+
+  /* =====================================================
+     MOBILE REVIEWS
+     ===================================================== */
 
   .reviews {
     grid-template-columns: 1fr;
+
     gap: 40px;
   }
 
   .reviews-content {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+      1fr 1fr;
+
     gap: 8px;
   }
 
@@ -2378,6 +2936,7 @@ footer nav a:hover {
   .review-avatar {
     width: 30px;
     height: 30px;
+
     font-size: 13px;
   }
 
@@ -2392,30 +2951,40 @@ footer nav a:hover {
   .review-google {
     width: 22px;
     height: 22px;
+
     font-size: 11px;
   }
 
   .review-stars {
     margin-top: 12px;
+
     font-size: 9px;
+
     letter-spacing: 1px;
   }
 
   .review-card p {
     margin-top: 8px;
+
     font-size: 10px;
+
     line-height: 1.5;
   }
 
-  /* ================= MOBILE REVIEW BUTTONS ================= */
+
+  /* =====================================================
+     MOBILE REVIEW BUTTONS
+     ===================================================== */
 
   .review-actions {
     grid-column: 1 / -1;
 
     display: flex;
+
     flex-direction: row;
 
     align-items: center;
+
     justify-content: center;
 
     gap: 8px;
@@ -2430,6 +2999,7 @@ footer nav a:hover {
     flex: 1;
 
     width: auto;
+
     min-width: 0;
 
     padding: 11px 8px;
@@ -2437,20 +3007,26 @@ footer nav a:hover {
     font-size: 8px;
 
     text-align: center;
+
     justify-content: center;
 
     white-space: nowrap;
   }
 
-  /* ================= MOBILE RATING ================= */
+
+  /* =====================================================
+     MOBILE RATING
+     ===================================================== */
 
   .reviews-rating {
     width: 100%;
 
     display: flex;
+
     flex-direction: column;
 
     align-items: center;
+
     justify-content: center;
 
     text-align: center;
@@ -2458,28 +3034,36 @@ footer nav a:hover {
     gap: 8px;
 
     margin-top: 30px;
+
     padding-top: 22px;
   }
 
   .reviews-rating strong {
     font-size: 55px;
+
     line-height: 1;
   }
 
   .reviews-rating .stars {
     font-size: 17px;
+
     letter-spacing: 3px;
   }
 
   .reviews-rating span {
     text-align: center;
+
     margin-top: 0;
   }
 
-  /* ================= MOBILE LOCATION ================= */
+
+  /* =====================================================
+     MOBILE LOCATION
+     ===================================================== */
 
   .location-content {
     padding: 65px 6vw;
+
     text-align: center;
   }
 
@@ -2495,6 +3079,7 @@ footer nav a:hover {
     flex-direction: column;
 
     align-items: center;
+
     justify-content: center;
 
     text-align: center;
@@ -2513,6 +3098,7 @@ footer nav a:hover {
     text-align: center;
   }
 
+
   /* Keep Get Directions + Call Now on SAME LINE */
 
   .contact-buttons {
@@ -2521,6 +3107,7 @@ footer nav a:hover {
     flex-direction: row;
 
     align-items: center;
+
     justify-content: center;
 
     gap: 8px;
@@ -2535,6 +3122,7 @@ footer nav a:hover {
     flex: 1;
 
     width: 50%;
+
     min-width: 0;
 
     padding: 12px 8px;
@@ -2552,10 +3140,14 @@ footer nav a:hover {
     min-height: 320px;
   }
 
-  /* ================= MOBILE SOCIAL ================= */
+
+  /* =====================================================
+     MOBILE SOCIAL
+     ===================================================== */
 
   .social-links a {
-    grid-template-columns: 48px 1fr 20px;
+    grid-template-columns:
+      48px 1fr 20px;
   }
 
   .social-links strong {
@@ -2566,25 +3158,32 @@ footer nav a:hover {
     font-size: 8px;
   }
 
-  /* ================= MOBILE FOOTER ================= */
+
+  /* =====================================================
+     MOBILE FOOTER
+     ===================================================== */
 
   footer {
     padding: 28px 6vw 95px;
+
     gap: 16px;
   }
 
   .footer-logo strong {
     font-size: 15px;
+
     letter-spacing: 1.2px;
   }
 
   .footer-logo small {
     font-size: 6px;
+
     letter-spacing: 1.5px;
   }
 
   footer nav {
     gap: 16px;
+
     flex-wrap: wrap;
   }
 
@@ -2594,19 +3193,27 @@ footer nav a:hover {
 
   .copyright {
     width: 100%;
+
     padding-top: 16px;
+
     font-size: 7px;
   }
 
-  /* ================= MOBILE ACTION BAR ================= */
+
+  /* =====================================================
+     MOBILE ACTION BAR
+     ===================================================== */
 
   .mobile-actions {
     position: fixed;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns:
+      repeat(3, 1fr);
 
     bottom: 0;
+
     left: 0;
     right: 0;
 
@@ -2620,7 +3227,8 @@ footer nav a:hover {
         #4b0202
       );
 
-    border-top: 1px solid rgba(255, 214, 107, 0.2);
+    border-top:
+      1px solid rgba(255, 214, 107, 0.2);
   }
 
   .mobile-actions a {
@@ -2644,8 +3252,9 @@ footer nav a:hover {
   }
 }
 
+
 /* =========================================================
-   ===================== SMALL PHONES ======================
+   SMALL PHONES
    ========================================================= */
 
 @media (max-width: 380px) {
@@ -2661,43 +3270,76 @@ footer nav a:hover {
   .primary-button,
   .secondary-button {
     padding: 11px 12px;
+
     font-size: 8px;
   }
 
-  /* Keep menu 2 × 2 */
+
+  /* ---------------- SMALL PHONE MENU ---------------- */
 
   .menu-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px;
+    width: 100%;
+
+    max-width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 6px;
+
+    justify-content: center;
+
+    align-items: stretch;
   }
 
   .menu-category {
-    padding: 13px 9px;
+    width: 100%;
+
+    padding: 11px 6px;
   }
 
   .menu-category-header {
-    gap: 5px;
+    gap: 3px;
+  }
+
+  .menu-category-header .menu-number {
+    font-size: 5px;
   }
 
   .menu-category-header h3 {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .dish-card {
-    min-height: 40px;
-    gap: 5px;
-    padding: 7px 0;
+    min-height: 38px;
+
+    gap: 3px;
+
+    padding: 6px 0;
+  }
+
+  .dish-dot {
+    width: 3px;
+    height: 3px;
   }
 
   .dish-name {
-    font-size: 8px;
+    font-size: 6.8px;
+
+    line-height: 1.2;
   }
 
   .dish-arrow {
-    font-size: 8px;
+    font-size: 6px;
   }
 
-  /* ================= SMALL PHONE GALLERY ================= */
+
+  /* ---------------- SMALL PHONE GALLERY ---------------- */
 
   .dish-gallery {
     gap: 8px;
@@ -2705,16 +3347,19 @@ footer nav a:hover {
 
   .dish-gallery-card {
     width: 100%;
+
     overflow: hidden;
   }
 
   .dish-gallery-image {
     width: 100%;
+
     height: 125px;
 
     display: block;
 
     padding: 0;
+
     margin: 0;
 
     overflow: hidden;
@@ -2722,6 +3367,7 @@ footer nav a:hover {
 
   .dish-gallery-image img {
     width: 100%;
+
     height: 100%;
 
     display: block;
@@ -2729,9 +3375,11 @@ footer nav a:hover {
     max-width: none;
 
     padding: 0;
+
     margin: 0;
 
     object-fit: cover;
+
     object-position: center;
   }
 
@@ -2762,6 +3410,7 @@ footer nav a:hover {
   .contact-buttons .primary-button,
   .contact-buttons .outline-button {
     font-size: 8px;
+
     padding: 11px 5px;
   }
 
@@ -2769,30 +3418,29 @@ footer nav a:hover {
     font-size: 33px;
   }
 }
-.hero-halal {
-  display: inline-block;
-  margin-bottom: 18px;
-  padding: 9px 18px;
-  border: 1px solid rgba(245, 197, 66, 0.8);
-  border-radius: 999px;
-  color: #f5c542;
-  background: rgba(0, 0, 0, 0.3);
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-}
+
+
+/* =========================================================
+   HALAL MOBILE
+   ========================================================= */
 
 @media (max-width: 768px) {
+
   .hero-halal {
     margin-bottom: 12px;
+
     padding: 6px 13px;
+
     font-size: 9px;
+
     letter-spacing: 1.5px;
   }
 }
-/* ================= IPHONE SOCIAL HEADING FIX ================= */
+
+
+/* =========================================================
+   SOCIAL HEADING FIX
+   ========================================================= */
 
 .social h2 {
   color: #4b0202 !important;
