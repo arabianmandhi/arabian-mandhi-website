@@ -15,6 +15,10 @@ import bestChickenBiryani from "./assets/best-chicken-biryani-madurai.png";
 const WHATSAPP_NUMBER = "918778395065";
 const PHONE_NUMBER = "+918778395065";
 
+/* =========================================================
+   HERO SLIDES
+========================================================= */
+
 const slides = [
   {
     title: "Mutton Mandhi",
@@ -56,6 +60,7 @@ const specialities = [
       "Mixed Mandhi",
     ],
   },
+
   {
     number: "02",
     name: "Biryani",
@@ -66,6 +71,7 @@ const specialities = [
       "Ghee Rice",
     ],
   },
+
   {
     number: "03",
     name: "Kapsa",
@@ -75,16 +81,20 @@ const specialities = [
       "Mixed Kapsa",
     ],
   },
+
   {
     number: "04",
-    name: "Bucket Mandhi",
+    name: "Bucket Specials",
     dishes: [
-      "Bucket Mandhi - 5 Persons",
-      "Bucket Mandhi - 10 Persons",
-      "Bucket Mandhi - 15 Persons",
-      "Bucket Mandhi - 20 Persons",
+      "Bucket Chicken Mandhi — 5 / 10 / 15 / 20 Persons",
+      "Bucket Mutton Mandhi — 5 / 10 / 15 / 20 Persons",
+      "Bucket Chicken Biryani — 5 / 10 / 15 / 20 Persons",
+      "Bucket Mutton Biryani — 5 / 10 / 15 / 20 Persons",
+      "Bucket Chicken Kapsa — 5 / 10 / 15 / 20 Persons",
+      "Bucket Mutton Kapsa — 5 / 10 / 15 / 20 Persons",
     ],
   },
+
   {
     number: "05",
     name: "Sides",
@@ -234,6 +244,7 @@ function App() {
             : "header"
         }
       >
+
         <a
           href="#home"
           className="logo"
@@ -255,6 +266,7 @@ function App() {
           }
           aria-label="Main navigation"
         >
+
           <a
             href="#menu"
             className={
@@ -314,6 +326,7 @@ function App() {
           >
             Contact
           </a>
+
         </nav>
 
         <a
@@ -338,6 +351,7 @@ function App() {
         >
           {menuOpen ? "×" : "☰"}
         </button>
+
       </header>
 
       {/* ===================================================
@@ -353,8 +367,9 @@ function App() {
         <section
           id="home"
           className="hero"
-          aria-label="Mandhi, biryani and Arabian food in Madurai"
+          aria-label="Mandhi, biryani, kapsa and bucket food in Madurai"
         >
+
           <div
             className="hero-track"
             style={{
@@ -362,14 +377,18 @@ function App() {
                 "translateX(-" + slide * 100 + "%)",
             }}
           >
+
             {slides.map((item, index) => (
+
               <article
                 className={
                   "hero-slide hero-photo-" + (index + 1)
                 }
                 key={item.title}
               >
+
                 <div className="hero-photo">
+
                   <img
                     src={item.image}
                     alt={
@@ -382,6 +401,7 @@ function App() {
                         : "lazy"
                     }
                   />
+
                 </div>
 
                 <div className="hero-gradient"></div>
@@ -433,8 +453,11 @@ function App() {
                   </div>
 
                 </div>
+
               </article>
+
             ))}
+
           </div>
 
           <div className="slider-controls">
@@ -447,7 +470,9 @@ function App() {
             </button>
 
             <div className="slider-dots">
+
               {slides.map((item, index) => (
+
                 <button
                   key={item.title}
                   className={
@@ -463,7 +488,9 @@ function App() {
                       : undefined
                   }
                 />
+
               ))}
+
             </div>
 
             <button
@@ -476,14 +503,23 @@ function App() {
           </div>
 
           <div className="hero-bottom">
+
             <span>1-DAY PRE-BOOKING</span>
+
             <i></i>
+
             <span>PARTY ORDERS</span>
+
             <i></i>
+
             <span>TAKEAWAY</span>
+
             <i></i>
+
             <span>HOME DELIVERY</span>
+
           </div>
+
         </section>
 
         {/* =================================================
@@ -505,13 +541,16 @@ function App() {
           <p>
             Arabian Mandhi Catering Services brings authentic
             Arabian food to Madurai, specialising in chicken
-            mandhi, mutton mandhi, kapsa, biryani and popular
+            mandhi, mutton mandhi, kapsa, biryani and
             bucket food options for families and groups.
-            Our bucket mandhi, bucket biryani and bucket
-            chicken options are ideal for family meals,
-            parties, celebrations and catering orders.
-            Food is prepared fresh and orders require
-            pre-booking at least one day ahead.
+            Choose from bucket chicken mandhi, bucket mutton
+            mandhi, bucket chicken biryani, bucket mutton
+            biryani, bucket chicken kapsa and bucket mutton
+            kapsa for 5, 10, 15 or 20 persons.
+            We also provide catering for both small and large
+            gatherings, parties and special occasions.
+            Food is prepared fresh and pre-booking is
+            recommended.
           </p>
 
         </section>
@@ -531,12 +570,12 @@ function App() {
             <div>
 
               <span className="label">
-                MANDHI & BIRYANI IN MADURAI
+                MANDHI, BIRYANI, KAPSA & BUCKET FOOD IN MADURAI
               </span>
 
               <h2 id="menu-title">
                 Madurai{" "}
-                <em>Mandhi & Biryani Menu</em>
+                <em>Mandhi, Biryani & Bucket Menu</em>
               </h2>
 
             </div>
@@ -550,8 +589,13 @@ function App() {
           <div className="menu-list">
 
             {specialities.map((category) => (
+
               <article
-                className="menu-category"
+                className={
+                  category.name === "Bucket Specials"
+                    ? "menu-category bucket-menu-category"
+                    : "menu-category"
+                }
                 key={category.name}
               >
 
@@ -570,6 +614,7 @@ function App() {
                 <div className="dish-list">
 
                   {category.dishes.map((dish) => (
+
                     <div
                       className="dish-card"
                       key={dish}
@@ -586,11 +631,13 @@ function App() {
                       </span>
 
                     </div>
+
                   ))}
 
                 </div>
 
               </article>
+
             ))}
 
           </div>
@@ -610,7 +657,7 @@ function App() {
           <div className="catering-content">
 
             <span className="label">
-              MANDHI & BUCKET CATERING IN MADURAI
+              MANDHI, BIRYANI & BUCKET CATERING IN MADURAI
             </span>
 
             <h2 id="catering-title">
@@ -625,10 +672,12 @@ function App() {
               Looking for mandhi catering in Madurai for a
               family gathering, birthday, celebration or
               special event? We prepare chicken mandhi,
-              mutton mandhi, kapsa, biryani and generous
-              bucket options for groups. Our bucket mandhi,
-              bucket biryani and bucket chicken options are
-              convenient for sharing with family and guests.
+              mutton mandhi, kapsa, biryani and bucket
+              options for both small and large groups.
+              Choose bucket chicken mandhi, bucket mutton
+              mandhi, bucket chicken biryani, bucket mutton
+              biryani, bucket chicken kapsa or bucket mutton
+              kapsa for 5, 10, 15 or 20 persons.
               Please pre-book your order at least one day
               in advance for fresh preparation and delivery.
             </p>
@@ -685,6 +734,7 @@ function App() {
           <div className="services-grid">
 
             <div>
+
               <span>01</span>
 
               <h3>
@@ -692,27 +742,32 @@ function App() {
               </h3>
 
               <p>
-                Please place your mandhi, biryani or bucket
-                food order at least one day in advance so we
-                can prepare your Arabian food fresh.
+                Please place your mandhi, biryani, kapsa or
+                bucket food order at least one day in advance
+                so we can prepare your Arabian food fresh.
               </p>
+
             </div>
 
             <div>
+
               <span>02</span>
 
               <h3>
-                Party Catering
+                Small & Large Catering
               </h3>
 
               <p>
                 Mandhi, kapsa, biryani and bucket options
-                prepared for family gatherings, parties and
-                special occasions in Madurai.
+                prepared for both small family gatherings
+                and large parties or special occasions
+                in Madurai.
               </p>
+
             </div>
 
             <div>
+
               <span>03</span>
 
               <h3>
@@ -721,12 +776,14 @@ function App() {
 
               <p>
                 Pre-order your favourite Arabian food,
-                including mandhi, biryani and bucket
+                including mandhi, biryani, kapsa and bucket
                 options, and collect it at the arranged time.
               </p>
+
             </div>
 
             <div>
+
               <span>04</span>
 
               <h3>
@@ -735,9 +792,10 @@ function App() {
 
               <p>
                 Enjoy freshly prepared mandhi, biryani,
-                bucket mandhi and bucket chicken delivered
-                for your pre-booked family and catering orders.
+                kapsa and bucket food delivered for your
+                pre-booked family, party and catering orders.
               </p>
+
             </div>
 
           </div>
@@ -771,10 +829,12 @@ function App() {
               <p className="gallery-intro">
                 Discover delicious chicken mandhi, mutton
                 mandhi, biryani and Arabian food in Madurai.
-                From individual favourites to bucket mandhi,
-                bucket biryani and bucket chicken for groups,
+                From individual favourites to bucket
+                chicken mandhi, bucket mutton mandhi, bucket
+                chicken biryani, bucket mutton biryani and
+                bucket kapsa for 5, 10, 15 and 20 persons,
                 Arabian Mandhi Catering Services prepares
-                fresh food for family meals, parties and
+                fresh food for families, parties and
                 special occasions.
               </p>
 
@@ -950,9 +1010,9 @@ function App() {
             </h3>
 
             <p>
-              Enjoy delicious mandhi, biryani and bucket
-              food in Madurai, freshly prepared for your
-              pre-booked family, party or catering order.
+              Enjoy delicious mandhi, biryani, kapsa and
+              bucket food in Madurai, freshly prepared for
+              your pre-booked family, party or catering order.
             </p>
 
             <a
@@ -995,8 +1055,8 @@ function App() {
             <p className="reviews-intro">
               Good food is meant to be shared — and so are
               good experiences. Discover what customers say
-              about our mandhi, biryani and Arabian food in
-              Madurai.
+              about our mandhi, biryani, kapsa and Arabian
+              food in Madurai.
             </p>
 
             <div className="reviews-rating">
@@ -1024,6 +1084,7 @@ function App() {
           <div className="reviews-content">
 
             {reviews.map((review) => (
+
               <article
                 className="review-card"
                 key={review.name}
@@ -1065,6 +1126,7 @@ function App() {
                 </p>
 
               </article>
+
             ))}
 
             <div className="review-actions">
@@ -1222,7 +1284,7 @@ function App() {
 
             <p>
               Follow Arabian Mandhi for food, mandhi,
-              biryani, bucket specials, updates and
+              biryani, kapsa, bucket specials, updates and
               special offers in Madurai.
             </p>
 
@@ -1331,7 +1393,7 @@ function App() {
 
         <div className="copyright">
           © 2026 Arabian Mandhi Catering Services, Madurai ·
-          Authentic Mandhi, Biryani & Arabian Food ·
+          Authentic Mandhi, Biryani, Kapsa & Bucket Food ·
           All Rights Reserved.
         </div>
 
