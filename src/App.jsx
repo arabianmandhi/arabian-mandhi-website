@@ -58,12 +58,12 @@ const specialities = [
   },
   {
     number: "02",
-    name: "Bucket Mandhi",
+    name: "Biryani",
     dishes: [
-      "Bucket Mandhi - 5 Persons",
-      "Bucket Mandhi - 10 Persons",
-      "Bucket Mandhi - 15 Persons",
-      "Bucket Mandhi - 20 Persons",
+      "Mutton Biryani",
+      "Chicken Biryani",
+      "Hyderabad Biryani",
+      "Ghee Rice",
     ],
   },
   {
@@ -77,12 +77,12 @@ const specialities = [
   },
   {
     number: "04",
-    name: "Biryani",
+    name: "Bucket Mandhi",
     dishes: [
-      "Mutton Biryani",
-      "Chicken Biryani",
-      "Hyderabad Biryani",
-      "Ghee Rice",
+      "Bucket Mandhi - 5 Persons",
+      "Bucket Mandhi - 10 Persons",
+      "Bucket Mandhi - 15 Persons",
+      "Bucket Mandhi - 20 Persons",
     ],
   },
   {
