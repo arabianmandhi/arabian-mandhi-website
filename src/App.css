@@ -13,18 +13,13 @@
   --black: #260303;
   --brown: #450606;
   --brown-light: #6f0808;
-
   --cream: #fff8e8;
   --cream-dark: #f4e5c8;
-
   --orange: #f0b52f;
   --orange-light: #ffd66b;
-
   --red: #a80708;
-
   --text: #2d0b0b;
   --muted: #705858;
-
   --white: #ffffff;
 }
 
@@ -76,14 +71,11 @@ section {
   top: 0;
   left: 0;
   right: 0;
-
   height: 88px;
   padding: 0 6vw;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   z-index: 1000;
 
   background:
@@ -128,12 +120,9 @@ section {
 .logo {
   display: flex;
   align-items: center;
-
   padding: 0;
   border-radius: 0;
-
   background: transparent !important;
-
   backdrop-filter: none;
   box-shadow: none;
 }
@@ -141,7 +130,6 @@ section {
 .logo-symbol {
   width: 41px;
   height: 41px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,7 +144,6 @@ section {
     );
 
   color: #4a0808;
-
   font-size: 18px;
 
   box-shadow:
@@ -171,14 +158,10 @@ section {
 
 .arabic-brand {
   font-family: "Noto Naskh Arabic", serif;
-
   color: var(--orange-light);
-
   font-size: 15px;
   line-height: 0.9;
-
   margin-bottom: 4px;
-
   direction: rtl;
 
   text-shadow:
@@ -187,17 +170,12 @@ section {
 
 .logo strong {
   display: block;
-
   color: #fff8df;
-
   font-family: "Playfair Display", serif;
-
   font-size: 17px;
   font-weight: 600;
-
   letter-spacing: 1.4px;
   line-height: 1;
-
   white-space: nowrap;
 
   text-shadow:
@@ -206,17 +184,12 @@ section {
 
 .logo small {
   display: block;
-
   margin-top: 5px;
-
   color: #ffd66b;
-
   font-size: 6.5px;
   font-weight: 600;
-
   letter-spacing: 2px;
   line-height: 1;
-
   white-space: nowrap;
 }
 
@@ -228,11 +201,8 @@ section {
 .logo-image {
   width: 190px;
   height: 85px;
-
   display: block;
-
   object-fit: contain;
-
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -251,30 +221,21 @@ section {
 
 .navigation a {
   position: relative;
-
   color: rgba(255, 220, 130, 0.85);
-
   font-size: 11px;
   font-weight: 600;
-
   padding: 8px 0;
-
   transition: color 0.25s ease;
 }
 
 .navigation a::after {
   content: "";
-
   position: absolute;
-
   left: 0;
   bottom: 0;
-
   width: 0;
   height: 1px;
-
   background: var(--orange-light);
-
   transition: width 0.3s ease;
 }
 
@@ -302,14 +263,10 @@ section {
     );
 
   color: #4a0808;
-
   padding: 12px 19px;
-
   border-radius: 30px;
-
   font-size: 11px;
   font-weight: 700;
-
   transition: 0.3s;
 
   box-shadow:
@@ -328,14 +285,10 @@ section {
 
 .hamburger {
   display: none;
-
   border: 0;
   background: none;
-
   color: var(--orange-light);
-
   font-size: 27px;
-
   cursor: pointer;
 }
 
@@ -347,18 +300,14 @@ section {
 .hero {
   height: 100vh;
   min-height: 680px;
-
   position: relative;
   overflow: hidden;
-
   background: var(--black);
-
   color: white;
 }
 
 .hero-track {
   display: flex;
-
   height: 100%;
 
   transition:
@@ -368,7 +317,6 @@ section {
 .hero-slide {
   min-width: 100%;
   height: 100%;
-
   position: relative;
 }
 
@@ -380,19 +328,15 @@ section {
 .hero-photo {
   position: absolute;
   inset: 0;
-
   overflow: hidden;
 }
 
 .hero-photo img {
   width: 100%;
   height: 100%;
-
   display: block;
-
   object-fit: cover;
   object-position: center center;
-
   transform: scale(1.2);
 }
 
@@ -429,29 +373,20 @@ section {
 
 .hero-content {
   position: absolute;
-
   z-index: 10;
-
   left: 9vw;
   top: 50%;
-
   transform: translateY(-40%);
-
   max-width: 700px;
 }
 
 .hero-arabic {
   font-family: "Noto Naskh Arabic", serif;
-
   color: var(--orange-light);
-
   font-size: 30px;
   font-weight: 700;
-
   margin-bottom: 10px;
-
   direction: rtl;
-
   width: fit-content;
 
   text-shadow:
@@ -460,53 +395,37 @@ section {
 
 .hero-kicker {
   color: #ffd66b;
-
   font-size: 13px;
-
   letter-spacing: 4px;
-
   font-weight: 800;
-
   margin-bottom: 18px;
 }
 
 .hero h1 {
   font-family: "El Messiri", serif;
-
   font-size: clamp(65px, 8vw, 110px);
-
   font-weight: 500;
-
   line-height: 0.85;
-
   letter-spacing: -3px;
-
   color: #ffffff;
 }
 
 .hero h1 em {
   color: var(--orange-light);
-
   font-style: normal;
-
   font-weight: 600;
 }
 
 .hero-subtitle {
   color: rgba(255, 245, 220, 0.78);
-
   margin-top: 23px;
-
   font-size: 13px;
-
   letter-spacing: 1px;
 }
 
 .hero-buttons {
   display: flex;
-
   gap: 10px;
-
   margin-top: 29px;
 }
 
@@ -517,23 +436,17 @@ section {
 
 .hero-halal {
   display: inline-block;
-
   margin-bottom: 18px;
-
   padding: 9px 18px;
 
   border: 1px solid rgba(245, 197, 66, 0.8);
-
   border-radius: 999px;
 
   color: #f5c542;
-
   background: rgba(0, 0, 0, 0.3);
 
   font-size: 13px;
-
   font-weight: 800;
-
   letter-spacing: 2px;
 
   backdrop-filter: blur(6px);
@@ -547,9 +460,7 @@ section {
 
 .primary-button {
   display: inline-flex;
-
   align-items: center;
-
   gap: 14px;
 
   background:
@@ -560,15 +471,10 @@ section {
     );
 
   color: #4a0808;
-
   padding: 14px 21px;
-
   border-radius: 30px;
-
   font-size: 11px;
-
   font-weight: 700;
-
   transition: 0.3s;
 
   box-shadow:
@@ -577,38 +483,29 @@ section {
 
 .primary-button:hover {
   background: #ffe18c;
-
   transform: translateY(-2px);
 }
 
 .secondary-button,
 .outline-button {
   display: inline-flex;
-
   align-items: center;
 
   border: 1px solid rgba(255, 214, 107, 0.5);
-
   background: rgba(80, 0, 0, 0.3);
 
   color: #ffe4a0;
-
   padding: 14px 21px;
-
   border-radius: 30px;
-
   font-size: 11px;
 
   backdrop-filter: blur(8px);
-
   transition: 0.3s;
 }
 
 .secondary-button:hover {
   background: rgba(255, 205, 80, 0.15);
-
   border-color: var(--orange-light);
-
   color: white;
 }
 
@@ -619,16 +516,12 @@ section {
 
 .slider-controls {
   position: absolute;
-
   z-index: 15;
-
   right: 7vw;
   bottom: 90px;
 
   display: flex;
-
   align-items: center;
-
   gap: 16px;
 }
 
@@ -637,11 +530,9 @@ section {
   height: 40px;
 
   border-radius: 50%;
-
   border: 1px solid rgba(255, 214, 107, 0.4);
 
   background: rgba(70, 0, 0, 0.35);
-
   color: var(--orange-light);
 
   cursor: pointer;
@@ -649,7 +540,6 @@ section {
 
 .slider-dots {
   display: flex;
-
   gap: 7px;
 }
 
@@ -658,17 +548,14 @@ section {
   height: 2px;
 
   border: 0;
-
   background: rgba(255, 220, 140, 0.3);
 
   cursor: pointer;
-
   transition: 0.4s;
 }
 
 .dot.active {
   width: 42px;
-
   background: var(--orange-light);
 }
 
@@ -679,34 +566,25 @@ section {
 
 .hero-bottom {
   position: absolute;
-
   bottom: 0;
-
   left: 0;
   right: 0;
 
   height: 50px;
-
   padding: 0 6vw;
 
   z-index: 15;
 
   display: flex;
-
   align-items: center;
-
   justify-content: flex-end;
-
   gap: 17px;
 
   border-top: 1px solid rgba(255, 214, 107, 0.2);
 
   color: rgba(255, 230, 170, 0.95);
-
   font-size: 8px;
-
   font-weight: 700;
-
   letter-spacing: 2px;
 
   text-shadow:
@@ -716,9 +594,7 @@ section {
 .hero-bottom i {
   width: 3px;
   height: 3px;
-
   background: var(--orange);
-
   border-radius: 50%;
 }
 
@@ -729,37 +605,27 @@ section {
 
 .label {
   display: block;
-
   color: var(--orange);
-
   font-size: 9px;
-
   letter-spacing: 3px;
-
   font-weight: 700;
-
   margin-bottom: 16px;
 }
 
 h2 {
   font-family: "Playfair Display", serif;
-
   font-size: clamp(45px, 5vw, 70px);
-
   line-height: 0.98;
-
   font-weight: 500;
 }
 
 h2 em {
   color: var(--orange);
-
   font-style: italic;
 }
 
 p {
   line-height: 1.75;
-
   color: var(--muted);
 }
 
@@ -770,17 +636,13 @@ p {
 
 .intro {
   padding: 90px 7vw;
-
   text-align: center;
-
   max-width: 850px;
-
   margin: auto;
 }
 
 .intro p {
   max-width: 600px;
-
   margin: 22px auto 0;
 }
 
@@ -802,11 +664,8 @@ p {
 
 .section-heading {
   display: flex;
-
   justify-content: space-between;
-
   align-items: flex-end;
-
   margin-bottom: 40px;
 }
 
@@ -815,27 +674,20 @@ p {
 
 .menu .section-heading {
   justify-content: center;
-
   align-items: center;
-
   text-align: center;
 }
 
 .menu .section-heading > div {
   width: 100%;
-
   text-align: center;
 }
 
 .section-heading > a {
   font-size: 11px;
-
   font-weight: 700;
-
   color: #8d0505;
-
   border-bottom: 1px solid var(--orange);
-
   padding-bottom: 4px;
 }
 
@@ -852,13 +704,31 @@ p {
 /* =========================================================
    MENU 3x2 CATEGORY GRID
    ========================================================= */
+
+/*
+   We use 6 grid columns.
+
+   Each card occupies 2 columns.
+
+   Row 1:
+   Card 1 | Card 2 | Card 3
+
+   Row 2:
+        Card 4 | Card 5
+
+   This keeps cards 4 and 5 perfectly centered.
+*/
+
 .menu-list {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
+
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
+
   gap: 20px;
+
   justify-content: center;
   align-items: stretch;
 }
@@ -867,25 +737,6 @@ p {
   width: 100%;
   min-width: 0;
   grid-column: span 2;
-}
-
-/* Center the last two cards */
-.menu-category:nth-child(4) {
-  grid-column: 2 / span 2;
-}
-
-.menu-category:nth-child(5) {
-  grid-column: 4 / span 2;
-}
-
-/* =========================================================
-   MENU CATEGORY CARD
-   ========================================================= */
-
-.menu-category {
-  width: 100%;
-
-  min-width: 0;
 
   background:
     linear-gradient(
@@ -903,6 +754,17 @@ p {
     box-shadow 0.3s ease;
 }
 
+
+/* Center the second row */
+
+.menu-category:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.menu-category:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
 .menu-category:hover {
   transform: translateY(-4px);
 
@@ -917,25 +779,20 @@ p {
 
 .menu-category-header {
   display: flex;
-
   align-items: center;
-
   gap: 14px;
 
   padding-bottom: 15px;
 
-  border-bottom: 1px solid rgba(100, 10, 10, 0.12);
+  border-bottom:
+    1px solid rgba(100, 10, 10, 0.12);
 }
 
 .menu-category-header .menu-number {
   color: var(--orange);
-
   font-size: 9px;
-
   font-weight: 700;
-
   letter-spacing: 2px;
-
   flex-shrink: 0;
 }
 
@@ -943,9 +800,7 @@ p {
   margin: 0;
 
   font-family: "Playfair Display", serif;
-
   font-size: 27px;
-
   font-weight: 500;
 
   color: #640404;
@@ -958,7 +813,6 @@ p {
 
 .dish-list {
   display: flex;
-
   flex-direction: column;
 }
 
@@ -969,16 +823,14 @@ p {
 
 .dish-card {
   display: flex;
-
   align-items: center;
-
   gap: 11px;
 
   min-height: 50px;
-
   padding: 10px 2px;
 
-  border-bottom: 1px solid rgba(100, 10, 10, 0.08);
+  border-bottom:
+    1px solid rgba(100, 10, 10, 0.08);
 
   transition:
     padding-left 0.25s ease,
@@ -991,7 +843,6 @@ p {
 
 .dish-card:hover {
   padding-left: 7px;
-
   background: rgba(255, 214, 107, 0.08);
 }
 
@@ -1007,7 +858,6 @@ p {
   flex-shrink: 0;
 
   border-radius: 50%;
-
   background: var(--orange);
 }
 
@@ -1022,9 +872,7 @@ p {
   color: #4d1818;
 
   font-size: 12px;
-
   font-weight: 600;
-
   line-height: 1.4;
 }
 
@@ -1035,9 +883,7 @@ p {
 
 .dish-arrow {
   color: #9b6a20;
-
   font-size: 12px;
-
   opacity: 0.65;
 
   transition: 0.25s ease;
@@ -1045,7 +891,6 @@ p {
 
 .dish-card:hover .dish-arrow {
   transform: translateX(4px);
-
   opacity: 1;
 }
 
@@ -1068,17 +913,14 @@ p {
   padding: 100px 7vw;
 
   display: grid;
-
   grid-template-columns: 1.3fr 1fr;
 
   align-items: center;
-
   gap: 70px;
 }
 
 .catering h2 {
   font-size: clamp(48px, 6vw, 80px);
-
   color: #ffffff;
 }
 
@@ -1088,9 +930,7 @@ p {
 
 .catering p {
   color: #e1c2a9;
-
   max-width: 500px;
-
   margin: 25px 0;
 }
 
@@ -1100,29 +940,24 @@ p {
 
 .occasion-list div {
   display: flex;
-
   align-items: center;
-
   gap: 25px;
 
   padding: 27px 0 27px 40px;
 
-  border-bottom: 1px solid rgba(255, 214, 107, 0.18);
+  border-bottom:
+    1px solid rgba(255, 214, 107, 0.18);
 }
 
 .occasion-list span {
   color: var(--orange);
-
   font-size: 9px;
 }
 
 .occasion-list strong {
   font-family: "Playfair Display", serif;
-
   font-size: 24px;
-
   font-weight: 500;
-
   color: #ffe0a0;
 }
 
@@ -1148,17 +983,17 @@ p {
 
 .services-grid {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
 
-  grid-template-columns:
-    repeat(4, 1fr);
-
-  border-top: 1px solid rgba(100, 10, 10, 0.15);
+  border-top:
+    1px solid rgba(100, 10, 10, 0.15);
 }
 
 .services-grid > article {
   padding: 28px 20px 20px 0;
 
-  border-right: 1px solid rgba(100, 10, 10, 0.15);
+  border-right:
+    1px solid rgba(100, 10, 10, 0.15);
 
   margin-right: 20px;
 }
@@ -1169,17 +1004,13 @@ p {
 
 .services-grid span {
   color: var(--orange);
-
   font-size: 9px;
-
   letter-spacing: 2px;
 }
 
 .services-grid h3 {
   font-family: "Playfair Display", serif;
-
   font-size: 24px;
-
   font-weight: 500;
 
   margin: 18px 0 8px;
@@ -1214,15 +1045,12 @@ p {
 
 .gallery .section-heading {
   margin-bottom: 45px;
-
   justify-content: center;
-
   text-align: center;
 }
 
 .gallery .section-heading > div {
   max-width: 800px;
-
   margin: 0 auto;
 }
 
@@ -1236,19 +1064,16 @@ p {
 
 .gallery-intro {
   max-width: 680px;
-
   margin: 20px auto 0;
 
   color: rgba(255, 230, 190, 0.72);
 
   font-size: 13px;
-
   line-height: 1.8;
 }
 
 .gallery-controls {
   display: flex;
-
   gap: 8px;
 }
 
@@ -1258,22 +1083,19 @@ p {
 
   border-radius: 50%;
 
-  border: 1px solid rgba(255, 214, 107, 0.4);
+  border:
+    1px solid rgba(255, 214, 107, 0.4);
 
   background: transparent;
-
   color: var(--orange-light);
 
   cursor: pointer;
-
   transition: 0.3s ease;
 }
 
 .gallery-controls button:hover {
   background: var(--orange);
-
   color: #4a0808;
-
   transform: translateY(-2px);
 }
 
@@ -1284,13 +1106,11 @@ p {
 
 .dish-gallery {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
 
   gap: 18px;
 
   max-width: 1200px;
-
   margin: 50px auto 0;
 }
 
@@ -1309,7 +1129,8 @@ p {
 
   color: var(--text);
 
-  border: 1px solid rgba(255, 214, 107, 0.12);
+  border:
+    1px solid rgba(255, 214, 107, 0.12);
 
   overflow: hidden;
 
@@ -1332,15 +1153,12 @@ p {
 
 .dish-gallery-image {
   width: 100%;
-
   height: 300px;
 
   padding: 0;
-
   margin: 0;
 
   display: block;
-
   position: relative;
 
   overflow: hidden;
@@ -1365,7 +1183,6 @@ p {
   padding: 0;
 
   object-fit: cover;
-
   object-position: center;
 }
 
@@ -1398,20 +1215,16 @@ p {
 
 .dish-gallery-image span {
   position: absolute;
-
   inset: 0;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
   color: rgba(255, 220, 150, 0.42);
 
   font-size: 9px;
-
   letter-spacing: 4px;
-
   font-weight: 600;
 
   pointer-events: none;
@@ -1424,7 +1237,6 @@ p {
 
 .dish-gallery-info {
   padding: 24px 25px 27px;
-
   text-align: left;
 }
 
@@ -1434,9 +1246,7 @@ p {
   color: #a56c18;
 
   font-size: 8px;
-
   font-weight: 700;
-
   letter-spacing: 2px;
 }
 
@@ -1446,9 +1256,7 @@ p {
   color: #640404;
 
   font-family: "Playfair Display", serif;
-
   font-size: 28px;
-
   font-weight: 500;
 }
 
@@ -1458,7 +1266,6 @@ p {
   color: #705858;
 
   font-size: 11px;
-
   line-height: 1.7;
 
   max-width: 470px;
@@ -1471,19 +1278,14 @@ p {
 
 .gallery-bottom {
   display: flex;
-
   justify-content: center;
-
   margin-top: 45px;
 }
 
 .view-all-dishes {
   display: inline-flex;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 12px;
 
   text-decoration: none;
@@ -1492,7 +1294,8 @@ p {
 
   padding: 14px 26px;
 
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border:
+    1px solid rgba(255, 255, 255, 0.25);
 
   background: rgba(255, 214, 107, 0.06);
 
@@ -1505,9 +1308,7 @@ p {
 
 .view-all-dishes:hover {
   background: var(--orange);
-
   color: #4a0808;
-
   transform: translateY(-2px);
 }
 
@@ -1522,12 +1323,12 @@ p {
 
 .gallery-order {
   max-width: 700px;
-
   margin: 80px auto 0;
 
   padding-top: 55px;
 
-  border-top: 1px solid rgba(255, 214, 107, 0.16);
+  border-top:
+    1px solid rgba(255, 214, 107, 0.16);
 
   text-align: center;
 }
@@ -1538,9 +1339,7 @@ p {
   color: var(--orange);
 
   font-size: 9px;
-
   font-weight: 700;
-
   letter-spacing: 3px;
 }
 
@@ -1552,7 +1351,6 @@ p {
   font-size: clamp(38px, 5vw, 58px);
 
   font-weight: 500;
-
   line-height: 1;
 
   color: #fff8df;
@@ -1564,7 +1362,6 @@ p {
 
 .gallery-order p {
   max-width: 450px;
-
   margin: 18px auto 25px;
 
   color: rgba(255, 230, 190, 0.68);
@@ -1585,9 +1382,7 @@ p {
   padding: 100px 7vw;
 
   display: grid;
-
-  grid-template-columns:
-    0.85fr 1.5fr;
+  grid-template-columns: 0.85fr 1.5fr;
 
   gap: 70px;
 
@@ -1607,33 +1402,28 @@ p {
 
 .reviews-intro {
   max-width: 400px;
-
   margin-top: 25px;
 
   font-size: 13px;
-
   color: var(--muted);
 }
 
 .reviews-rating {
   display: flex;
-
   align-items: center;
-
   gap: 18px;
 
   margin-top: 35px;
-
   padding-top: 25px;
 
-  border-top: 1px solid rgba(100, 10, 10, 0.12);
+  border-top:
+    1px solid rgba(100, 10, 10, 0.12);
 }
 
 .reviews-rating strong {
   font-family: "Playfair Display", serif;
 
   font-size: 65px;
-
   line-height: 1;
 
   color: var(--red);
@@ -1641,9 +1431,7 @@ p {
 
 .reviews-rating .stars {
   color: var(--orange);
-
   font-size: 18px;
-
   letter-spacing: 3px;
 }
 
@@ -1653,18 +1441,13 @@ p {
   margin-top: 4px;
 
   font-size: 9px;
-
   color: var(--muted);
-
   letter-spacing: 0.5px;
 }
 
 .reviews-content {
   display: grid;
-
-  grid-template-columns:
-    1fr 1fr;
-
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
 
@@ -1680,7 +1463,8 @@ p {
 
   padding: 27px;
 
-  border: 1px solid rgba(120, 0, 0, 0.09);
+  border:
+    1px solid rgba(120, 0, 0, 0.09);
 
   box-shadow:
     0 12px 30px rgba(80, 5, 5, 0.08);
@@ -1699,9 +1483,7 @@ p {
 
 .review-card-top {
   display: flex;
-
   align-items: center;
-
   gap: 12px;
 }
 
@@ -1712,7 +1494,6 @@ p {
   flex-shrink: 0;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
@@ -1728,7 +1509,6 @@ p {
   color: var(--orange-light);
 
   font-family: "Playfair Display", serif;
-
   font-size: 17px;
 }
 
@@ -1740,7 +1520,6 @@ p {
   font-family: "Playfair Display", serif;
 
   font-size: 16px;
-
   font-weight: 600;
 }
 
@@ -1752,7 +1531,6 @@ p {
   color: var(--muted);
 
   font-size: 8px;
-
   letter-spacing: 0.5px;
 }
 
@@ -1763,20 +1541,17 @@ p {
   height: 28px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
   border-radius: 50%;
 
   background: white;
-
   color: #4285f4;
 
   font-family: Arial, sans-serif;
 
   font-weight: 700;
-
   font-size: 15px;
 
   box-shadow:
@@ -1789,7 +1564,6 @@ p {
   color: var(--orange);
 
   font-size: 13px;
-
   letter-spacing: 3px;
 }
 
@@ -1799,7 +1573,6 @@ p {
   font-family: "Playfair Display", serif;
 
   font-size: 14px;
-
   line-height: 1.7;
 
   color: #5d3838;
@@ -1814,7 +1587,6 @@ p {
   grid-column: 1 / -1;
 
   display: flex;
-
   align-items: center;
 
   gap: 14px;
@@ -1824,9 +1596,7 @@ p {
 
 .write-review-button {
   display: inline-flex;
-
   align-items: center;
-
   justify-content: center;
 
   gap: 8px;
@@ -1845,7 +1615,6 @@ p {
   color: #4a0808;
 
   font-size: 10px;
-
   font-weight: 700;
 
   box-shadow:
@@ -1856,25 +1625,23 @@ p {
 
 .write-review-button:hover {
   transform: translateY(-2px);
-
   background: #ffe18c;
 }
 
 .view-reviews-button {
   display: inline-flex;
-
   align-items: center;
 
   padding: 14px 20px;
 
   border-radius: 30px;
 
-  border: 1px solid rgba(100, 10, 10, 0.25);
+  border:
+    1px solid rgba(100, 10, 10, 0.25);
 
   color: #640404;
 
   font-size: 10px;
-
   font-weight: 700;
 
   transition: 0.3s;
@@ -1882,9 +1649,7 @@ p {
 
 .view-reviews-button:hover {
   border-color: var(--orange);
-
   background: rgba(255, 214, 107, 0.12);
-
   transform: translateY(-2px);
 }
 
@@ -1895,9 +1660,7 @@ p {
 
 .location {
   display: grid;
-
-  grid-template-columns:
-    1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
   background:
     linear-gradient(
@@ -1917,11 +1680,8 @@ p {
 
 .contact-row {
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
-
   justify-content: center;
 
   gap: 8px;
@@ -1933,7 +1693,6 @@ p {
 
 .contact-row > span {
   font-size: 24px;
-
   color: var(--red);
 }
 
@@ -1961,17 +1720,14 @@ p {
 
 .contact-row a {
   color: #640404;
-
   font-weight: 600;
 }
 
 .contact-buttons {
   display: flex;
-
   flex-direction: row;
 
   align-items: center;
-
   justify-content: center;
 
   gap: 10px;
@@ -1991,7 +1747,8 @@ p {
 .location .outline-button {
   color: #640404;
 
-  border-color: rgba(100, 10, 10, 0.25);
+  border-color:
+    rgba(100, 10, 10, 0.25);
 
   background: transparent;
 }
@@ -2000,11 +1757,9 @@ p {
   min-height: 570px;
 
   display: flex;
-
   flex-direction: column;
 
   justify-content: center;
-
   align-items: center;
 
   text-align: center;
@@ -2021,7 +1776,6 @@ p {
 
 .map-placeholder > span {
   font-size: 48px;
-
   color: var(--orange-light);
 }
 
@@ -2037,7 +1791,6 @@ p {
 
 .map-placeholder small {
   margin-top: 5px;
-
   color: #e9bb78;
 }
 
@@ -2050,9 +1803,7 @@ p {
   padding: 90px 7vw;
 
   display: grid;
-
-  grid-template-columns:
-    1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
   gap: 70px;
 
@@ -2072,14 +1823,14 @@ p {
 .social-links a {
   display: grid;
 
-  grid-template-columns:
-    55px 1fr 30px;
+  grid-template-columns: 55px 1fr 30px;
 
   align-items: center;
 
   padding: 22px 0;
 
-  border-bottom: 1px solid rgba(100, 10, 10, 0.12);
+  border-bottom:
+    1px solid rgba(100, 10, 10, 0.12);
 
   transition: 0.3s;
 }
@@ -2093,14 +1844,12 @@ p {
   height: 38px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
   border-radius: 50%;
 
   background: #720404;
-
   color: var(--orange-light);
 
   font-family: Arial, sans-serif;
@@ -2112,7 +1861,6 @@ p {
 
 .social-links a:hover .social-icon {
   background: var(--orange);
-
   color: #4a0808;
 }
 
@@ -2122,13 +1870,11 @@ p {
 
 .facebook-icon {
   font-weight: 700;
-
   font-size: 23px;
 }
 
 .x-icon {
   font-size: 18px;
-
   font-weight: 500;
 }
 
@@ -2138,7 +1884,6 @@ p {
   font-family: "Playfair Display", serif;
 
   font-size: 24px;
-
   font-weight: 500;
 
   color: #640404;
@@ -2152,7 +1897,6 @@ p {
   color: var(--muted);
 
   font-size: 10px;
-
   letter-spacing: 0.5px;
 }
 
@@ -2160,7 +1904,6 @@ p {
   font-family: Arial;
 
   font-size: 16px;
-
   font-weight: 400;
 
   color: #810505;
@@ -2184,11 +1927,9 @@ footer {
   padding: 32px 7vw 22px;
 
   display: flex;
-
   flex-direction: column;
 
   align-items: center;
-
   text-align: center;
 
   gap: 18px;
@@ -2196,9 +1937,7 @@ footer {
 
 .footer-logo {
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
 }
 
@@ -2206,9 +1945,7 @@ footer {
   font-family: "Playfair Display", serif;
 
   font-size: 17px;
-
   font-weight: 500;
-
   letter-spacing: 1.5px;
 
   color: #ffe0a0;
@@ -2220,7 +1957,6 @@ footer {
   color: #d99e63;
 
   font-size: 7px;
-
   letter-spacing: 2px;
 
   margin-top: 5px;
@@ -2228,9 +1964,7 @@ footer {
 
 footer nav {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   gap: 22px;
@@ -2240,7 +1974,6 @@ footer nav a {
   color: #e8bd75;
 
   font-size: 9px;
-
   font-weight: 500;
 
   transition: 0.25s ease;
@@ -2255,12 +1988,12 @@ footer nav a:hover {
 
   padding-top: 18px;
 
-  border-top: 1px solid rgba(255, 214, 107, 0.15);
+  border-top:
+    1px solid rgba(255, 214, 107, 0.15);
 
   color: #b98263;
 
   font-size: 8px;
-
   line-height: 1.6;
 }
 
@@ -2342,7 +2075,6 @@ footer nav a:hover {
 
   .header {
     height: 72px;
-
     padding: 0 4vw;
   }
 
@@ -2359,7 +2091,6 @@ footer nav a:hover {
     position: fixed;
 
     top: 72px;
-
     left: 0;
     right: 0;
 
@@ -2374,14 +2105,14 @@ footer nav a:hover {
     backdrop-filter: blur(18px);
 
     flex-direction: column;
-
     align-items: flex-start;
 
     padding: 25px 7vw;
 
     gap: 5px;
 
-    border-bottom: 1px solid rgba(255, 214, 107, 0.2);
+    border-bottom:
+      1px solid rgba(255, 214, 107, 0.2);
   }
 
   .navigation.show {
@@ -2411,7 +2142,6 @@ footer nav a:hover {
 
   .hero-content {
     left: 7vw;
-
     right: 7vw;
   }
 
@@ -2424,7 +2154,6 @@ footer nav a:hover {
 
   .menu-list {
     width: 100%;
-
     max-width: 900px;
 
     margin-left: auto;
@@ -2433,19 +2162,28 @@ footer nav a:hover {
     display: grid;
 
     grid-template-columns:
-      repeat(3, minmax(0, 1fr));
+      repeat(6, minmax(0, 1fr));
 
     gap: 15px;
 
     justify-content: center;
-
     align-items: stretch;
   }
 
   .menu-category {
     width: 100%;
 
+    grid-column: span 2;
+
     padding: 20px 15px;
+  }
+
+  .menu-category:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  .menu-category:nth-child(5) {
+    grid-column: 4 / span 2;
   }
 
   .menu-category-header {
@@ -2475,8 +2213,7 @@ footer nav a:hover {
   /* ---------------- SERVICES ---------------- */
 
   .services-grid {
-    grid-template-columns:
-      1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
 
@@ -2512,7 +2249,6 @@ footer nav a:hover {
 
   .header {
     height: 70px;
-
     padding: 0 3vw;
   }
 
@@ -2522,40 +2258,33 @@ footer nav a:hover {
 
   .logo {
     gap: 8px;
-
     padding-right: 9px;
   }
 
   .logo-symbol {
     width: 32px;
     height: 32px;
-
     font-size: 14px;
   }
 
   .arabic-brand {
     font-size: 10px;
-
     margin-bottom: 2px;
   }
 
   .logo strong {
     font-size: 11px;
-
     letter-spacing: 0.8px;
   }
 
   .logo small {
     font-size: 4.5px;
-
     letter-spacing: 1.2px;
-
     margin-top: 3px;
   }
 
   .logo-image {
     width: 115px;
-
     height: auto;
   }
 
@@ -2576,33 +2305,26 @@ footer nav a:hover {
 
   .hero-arabic {
     font-size: 23px;
-
     font-weight: 700;
   }
 
   .hero-kicker {
     font-size: 10px;
-
     font-weight: 800;
-
     letter-spacing: 3px;
   }
 
   .hero-halal {
     margin-bottom: 14px;
-
     padding: 8px 15px;
 
     font-size: 11px;
-
     font-weight: 800;
-
     letter-spacing: 2px;
   }
 
   .hero h1 {
     font-size: 58px;
-
     letter-spacing: -2px;
   }
 
@@ -2612,20 +2334,17 @@ footer nav a:hover {
 
   .hero-buttons {
     gap: 7px;
-
     margin-bottom: 0;
   }
 
   .primary-button,
   .secondary-button {
     padding: 12px 14px;
-
     font-size: 9px;
   }
 
   .slider-controls {
     right: 5vw;
-
     bottom: 70px;
   }
 
@@ -2650,33 +2369,29 @@ footer nav a:hover {
 
   .section-heading {
     align-items: flex-start;
-
     flex-direction: column;
-
     gap: 20px;
   }
 
   .menu .section-heading {
     align-items: center;
-
     text-align: center;
   }
 
   .menu .section-heading > div {
     width: 100%;
-
     text-align: center;
   }
 
 
   /* =====================================================
      MOBILE MENU
-     EXACT 3 COLUMNS
+     3 CARDS FIRST ROW
+     2 CARDS CENTERED SECOND ROW
      ===================================================== */
 
   .menu-list {
     width: 100%;
-
     max-width: 100%;
 
     margin-left: auto;
@@ -2685,48 +2400,52 @@ footer nav a:hover {
     display: grid;
 
     grid-template-columns:
-      repeat(3, minmax(0, 1fr));
+      repeat(6, minmax(0, 1fr));
 
     gap: 8px;
 
     justify-content: center;
-
     align-items: stretch;
   }
 
   .menu-category {
     width: 100%;
-
     min-width: 0;
+
+    grid-column: span 2;
 
     padding: 13px 8px;
   }
 
+  /* Center cards 4 and 5 */
+
+  .menu-category:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  .menu-category:nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+
   .menu-category-header {
     gap: 4px;
-
     padding-bottom: 9px;
-
     align-items: center;
   }
 
   .menu-category-header .menu-number {
     font-size: 6px;
-
     letter-spacing: 0.7px;
   }
 
   .menu-category-header h3 {
     font-size: 15px;
-
     line-height: 1.1;
   }
 
   .dish-card {
     min-height: 40px;
-
     padding: 7px 0;
-
     gap: 4px;
   }
 
@@ -2741,7 +2460,6 @@ footer nav a:hover {
 
   .dish-name {
     font-size: 7.5px;
-
     line-height: 1.25;
   }
 
@@ -2784,9 +2502,7 @@ footer nav a:hover {
 
   .gallery-intro {
     font-size: 11px;
-
     line-height: 1.7;
-
     margin-top: 15px;
   }
 
@@ -2804,25 +2520,20 @@ footer nav a:hover {
 
   .dish-gallery-card {
     min-width: 0;
-
     width: 100%;
-
     overflow: hidden;
   }
 
   .dish-gallery-image {
     width: 100%;
-
     height: 145px;
 
     display: block;
 
     padding: 0;
-
     margin: 0;
 
     position: relative;
-
     overflow: hidden;
   }
 
@@ -2830,23 +2541,19 @@ footer nav a:hover {
     display: block;
 
     width: 100%;
-
     height: 100%;
 
     max-width: none;
 
     padding: 0;
-
     margin: 0;
 
     object-fit: cover;
-
     object-position: center;
   }
 
   .dish-gallery-image span {
     font-size: 6px;
-
     letter-spacing: 2px;
   }
 
@@ -2856,21 +2563,17 @@ footer nav a:hover {
 
   .dish-gallery-number {
     font-size: 6px;
-
     letter-spacing: 1px;
   }
 
   .dish-gallery-info h3 {
     font-size: 17px;
-
     margin-top: 5px;
   }
 
   .dish-gallery-info p {
     font-size: 8px;
-
     line-height: 1.5;
-
     margin-top: 6px;
   }
 
@@ -2880,19 +2583,16 @@ footer nav a:hover {
 
   .view-all-dishes {
     padding: 11px 17px;
-
     font-size: 8px;
   }
 
   .gallery-order {
     margin-top: 55px;
-
     padding-top: 40px;
   }
 
   .gallery-order-label {
     font-size: 7px;
-
     letter-spacing: 2px;
   }
 
@@ -2902,13 +2602,11 @@ footer nav a:hover {
 
   .gallery-order p {
     font-size: 10px;
-
     margin-top: 14px;
   }
 
   .gallery-order .primary-button {
     padding: 12px 18px;
-
     font-size: 9px;
   }
 
@@ -2919,14 +2617,11 @@ footer nav a:hover {
 
   .reviews {
     grid-template-columns: 1fr;
-
     gap: 40px;
   }
 
   .reviews-content {
-    grid-template-columns:
-      1fr 1fr;
-
+    grid-template-columns: 1fr 1fr;
     gap: 8px;
   }
 
@@ -2941,7 +2636,6 @@ footer nav a:hover {
   .review-avatar {
     width: 30px;
     height: 30px;
-
     font-size: 13px;
   }
 
@@ -2956,23 +2650,18 @@ footer nav a:hover {
   .review-google {
     width: 22px;
     height: 22px;
-
     font-size: 11px;
   }
 
   .review-stars {
     margin-top: 12px;
-
     font-size: 9px;
-
     letter-spacing: 1px;
   }
 
   .review-card p {
     margin-top: 8px;
-
     font-size: 10px;
-
     line-height: 1.5;
   }
 
@@ -2985,11 +2674,9 @@ footer nav a:hover {
     grid-column: 1 / -1;
 
     display: flex;
-
     flex-direction: row;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 8px;
@@ -3004,7 +2691,6 @@ footer nav a:hover {
     flex: 1;
 
     width: auto;
-
     min-width: 0;
 
     padding: 11px 8px;
@@ -3012,7 +2698,6 @@ footer nav a:hover {
     font-size: 8px;
 
     text-align: center;
-
     justify-content: center;
 
     white-space: nowrap;
@@ -3027,11 +2712,9 @@ footer nav a:hover {
     width: 100%;
 
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     text-align: center;
@@ -3039,25 +2722,21 @@ footer nav a:hover {
     gap: 8px;
 
     margin-top: 30px;
-
     padding-top: 22px;
   }
 
   .reviews-rating strong {
     font-size: 55px;
-
     line-height: 1;
   }
 
   .reviews-rating .stars {
     font-size: 17px;
-
     letter-spacing: 3px;
   }
 
   .reviews-rating span {
     text-align: center;
-
     margin-top: 0;
   }
 
@@ -3068,7 +2747,6 @@ footer nav a:hover {
 
   .location-content {
     padding: 65px 6vw;
-
     text-align: center;
   }
 
@@ -3084,7 +2762,6 @@ footer nav a:hover {
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     text-align: center;
@@ -3108,11 +2785,9 @@ footer nav a:hover {
 
   .contact-buttons {
     display: flex;
-
     flex-direction: row;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 8px;
@@ -3127,7 +2802,6 @@ footer nav a:hover {
     flex: 1;
 
     width: 50%;
-
     min-width: 0;
 
     padding: 12px 8px;
@@ -3151,8 +2825,7 @@ footer nav a:hover {
      ===================================================== */
 
   .social-links a {
-    grid-template-columns:
-      48px 1fr 20px;
+    grid-template-columns: 48px 1fr 20px;
   }
 
   .social-links strong {
@@ -3170,25 +2843,21 @@ footer nav a:hover {
 
   footer {
     padding: 28px 6vw 95px;
-
     gap: 16px;
   }
 
   .footer-logo strong {
     font-size: 15px;
-
     letter-spacing: 1.2px;
   }
 
   .footer-logo small {
     font-size: 6px;
-
     letter-spacing: 1.5px;
   }
 
   footer nav {
     gap: 16px;
-
     flex-wrap: wrap;
   }
 
@@ -3198,9 +2867,7 @@ footer nav a:hover {
 
   .copyright {
     width: 100%;
-
     padding-top: 16px;
-
     font-size: 7px;
   }
 
@@ -3213,12 +2880,9 @@ footer nav a:hover {
     position: fixed;
 
     display: grid;
-
-    grid-template-columns:
-      repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     bottom: 0;
-
     left: 0;
     right: 0;
 
@@ -3275,7 +2939,6 @@ footer nav a:hover {
   .primary-button,
   .secondary-button {
     padding: 11px 12px;
-
     font-size: 8px;
   }
 
@@ -3284,7 +2947,6 @@ footer nav a:hover {
 
   .menu-list {
     width: 100%;
-
     max-width: 100%;
 
     margin-left: auto;
@@ -3293,19 +2955,30 @@ footer nav a:hover {
     display: grid;
 
     grid-template-columns:
-      repeat(3, minmax(0, 1fr));
+      repeat(6, minmax(0, 1fr));
 
     gap: 6px;
 
     justify-content: center;
-
     align-items: stretch;
   }
 
   .menu-category {
     width: 100%;
 
+    grid-column: span 2;
+
     padding: 11px 6px;
+  }
+
+  /* Center cards 4 and 5 */
+
+  .menu-category:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  .menu-category:nth-child(5) {
+    grid-column: 4 / span 2;
   }
 
   .menu-category-header {
@@ -3322,9 +2995,7 @@ footer nav a:hover {
 
   .dish-card {
     min-height: 38px;
-
     gap: 3px;
-
     padding: 6px 0;
   }
 
@@ -3335,7 +3006,6 @@ footer nav a:hover {
 
   .dish-name {
     font-size: 6.8px;
-
     line-height: 1.2;
   }
 
@@ -3352,19 +3022,16 @@ footer nav a:hover {
 
   .dish-gallery-card {
     width: 100%;
-
     overflow: hidden;
   }
 
   .dish-gallery-image {
     width: 100%;
-
     height: 125px;
 
     display: block;
 
     padding: 0;
-
     margin: 0;
 
     overflow: hidden;
@@ -3372,7 +3039,6 @@ footer nav a:hover {
 
   .dish-gallery-image img {
     width: 100%;
-
     height: 100%;
 
     display: block;
@@ -3380,11 +3046,9 @@ footer nav a:hover {
     max-width: none;
 
     padding: 0;
-
     margin: 0;
 
     object-fit: cover;
-
     object-position: center;
   }
 
@@ -3415,7 +3079,6 @@ footer nav a:hover {
   .contact-buttons .primary-button,
   .contact-buttons .outline-button {
     font-size: 8px;
-
     padding: 11px 5px;
   }
 
@@ -3437,7 +3100,6 @@ footer nav a:hover {
     padding: 6px 13px;
 
     font-size: 9px;
-
     letter-spacing: 1.5px;
   }
 }
