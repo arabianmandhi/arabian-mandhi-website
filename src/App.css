@@ -852,26 +852,31 @@ p {
 /* =========================================================
    MENU 3x2 CATEGORY GRID
    ========================================================= */
-
 .menu-list {
   width: 100%;
-
   max-width: 1100px;
-
   margin: 0 auto;
-
   display: grid;
-
-  grid-template-columns:
-    repeat(3, minmax(0, 1fr));
-
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 20px;
-
   justify-content: center;
-
   align-items: stretch;
 }
 
+.menu-category {
+  width: 100%;
+  min-width: 0;
+  grid-column: span 2;
+}
+
+/* Center the last two cards */
+.menu-category:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.menu-category:nth-child(5) {
+  grid-column: 4 / span 2;
+}
 
 /* =========================================================
    MENU CATEGORY CARD
